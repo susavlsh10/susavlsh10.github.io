@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: " Welcome to my homepage"
+title: " Hello, I'm Susav."
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Research statement
+Computer Engineer | PhD student
 -------------------
 
 Working on democratizing deep learning and AI by building hardware efficient and scalable systems. 
