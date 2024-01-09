@@ -11,9 +11,14 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+
+* Texas A&M University, College Station       Aug 2021 - 2025  
+    Doctor of Philosophy in Computer Engineering
+    Thesis: Hardware Efficient ML System Design in Knowledge Retrieval
+
+* University of Texas Arlington               Aug 2017 - May 2021
+    Bachelor of Science in Electrical Engineering with Honors
+    Minor in Computer Science
 
 Work experience
 ======
