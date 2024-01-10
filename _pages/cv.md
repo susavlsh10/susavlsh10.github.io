@@ -13,13 +13,13 @@ Education
 ======
 
 * **Texas A&M University**,  
+&nbsp; **Doctor of Philosophy in Computer Engineering**   
 &nbsp; College Station, TX, Aug 2021 - Est. 2025  
-&nbsp; **Doctor of Philosophy in Computer Engineering**     
 &nbsp; Thesis: Hardware Efficient ML System Design in Knowledge Retrieval
 
 * **University of Texas Arlington**  
-&nbsp; Arlington, TX, Aug 2017 - May 2021  
-&nbsp; **Bachelor of Science in Electrical Engineering with Honors**  
+&nbsp; **Bachelor of Science in Electrical Engineering with Honors** 
+&nbsp; Arlington, TX, Aug 2017 - May 2021   
 &nbsp; Minor in Computer Science  
 
 
@@ -49,8 +49,25 @@ Work experience
 * Delivered 2 patents applications for efficient Neural Information Retrieval system design during the internship.  
 
 
+**University of Texas Arlington**  
+&nbsp; **Undergraduate Research and Teaching Assistant**  
+&nbsp; Arlington, TX, Aug 2019 - May 2021  
+*  Developed signal processing algorithms to measure dynamic soil properties using a Radar system, simulated, designed, and fabricated electromagnetic sensors.  
+* Teaching assistant for EE2347, Mathematical Foundation of Electrical Engineering. Responsibilities: instructor for lab; taught sophomores algorithms and introduction to python, graded assignments.  
+* Teaching assistant for EE3407, Fundamentals of Electromagnetics. Responsibilites: conducted study sessions and exam reviews. Assisted in redesigning lab experiments with integration of new simulation tools like Ansys HFSS.  
+
+**University of Texas Arlington**  
+&nbsp; **Academic Tutor, Supplimental Instructor and Mentor**  
+&nbsp; Arlington, TX, Aug 2018 - May 2021  
+* 1 on 1 tutoring for UTSI. Academic tutor for Calculus I & II, Physcis I & II, Chemistry.
+* Supplimental Instructor (SI Leader) for UTSI. SI leader for Calculus III, Differential Equation & Linear Algebra. Responsibilites: conducted biweekly study sessions, helped students learn course material and exam reviews.
+* Supplimental Instructor Mentor for UTSI. Responsibilities: Managed and mentored 5-6 SI leaders per semester. Conducted training for SI leaders, hosted weekly mentoring sessions.
+
 Skills
 ======
+
+**Relevant Coursework**: Advance Computer Architecture, Parallel Computing, Distributed Processing, Deep Learning,Machine Learning, NLP, Information Retrieval, Memory & Storage Systems, Operating Systems, Advanced Algorithms.  
+**Technical**: C/C++, Python, Java, CUDA, MATLAB, OpenCL, OpenMP, Pthreads, MPI, Pytorch, Scikit-learn, gRPC, Hadoop, Azure, AWS, Spark, Verilog, VHDL, Vitis/Vivado HLS, Object Oriented Programming (OOP), GIT, Linux.  
 
 
   
