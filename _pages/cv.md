@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-[Download Resume](https://github.com/susavlsh10/susavlsh10.github.io/blob/master/files/sls_resume.pdf)  
+[Resume](https://github.com/susavlsh10/susavlsh10.github.io/blob/master/files/sls_resume.pdf)  
 
 
 Education
