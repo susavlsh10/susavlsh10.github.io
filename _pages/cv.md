@@ -21,7 +21,7 @@ Education
 &nbsp; **Bachelor of Science in Electrical Engineering with Honors**  
 &nbsp; Arlington, TX, Aug 2017 - May 2021   
 &nbsp; Minor in Computer Science  
-
+&nbsp; Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties  
 
 Publications
 ======
