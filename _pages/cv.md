@@ -18,7 +18,7 @@ Education
 &nbsp; Thesis: Hardware Efficient ML System Design in Knowledge Retrieval
 
 * **University of Texas Arlington**  
-&nbsp; **Bachelor of Science in Electrical Engineering with Honors** 
+&nbsp; **Bachelor of Science in Electrical Engineering with Honors**  
 &nbsp; Arlington, TX, Aug 2017 - May 2021   
 &nbsp; Minor in Computer Science  
 
