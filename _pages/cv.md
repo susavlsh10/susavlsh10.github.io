@@ -95,7 +95,6 @@ Work experience
 * Teaching assistant for EE2347, Mathematical Foundation of Electrical Engineering. Responsibilities: instructor for lab; taught sophomores algorithms and introduction to python, graded assignments.  
 * Teaching assistant for EE3407, Fundamentals of Electromagnetics. Responsibilites: conducted study sessions and exam reviews. Assisted in redesigning lab experiments with integration of new simulation tools like Ansys HFSS.  
 
-**University of Texas Arlington**  
 &nbsp; **Academic Tutor, Supplimental Instructor and Mentor**  
 &nbsp; Arlington, TX, Aug 2018 - May 2021  
 * 1 on 1 tutoring for UTSI. Academic tutor for Calculus I & II, Physcis I & II, Chemistry.
