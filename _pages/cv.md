@@ -18,9 +18,9 @@ Education
   <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100" style="float: left; margin-right: 20px;">
   <div>
     <h3>Texas A&M University</h3>
-    <p style="line-height: 0.4;"><strong>Doctor of Philosophy in Computer Engineering</strong></p>
-    <p style="line-height: 0.4;">College Station, TX, Aug 2021 - Est. 2025</p>
-    <p style="line-height: 0.4;">Thesis: Hardware Efficient ML System Design in Knowledge Retrieval</p>
+    <p style="line-height: 0.6;"><strong>Doctor of Philosophy in Computer Engineering</strong></p>
+    <p style="line-height: 0.6;">College Station, TX, Aug 2021 - Est. 2025</p>
+    <p style="line-height: 0.6;">Thesis: Hardware Efficient ML System Design in Knowledge Retrieval</p>
   </div>
 </div>
 
@@ -29,9 +29,9 @@ Education
   <img src="/images/utaedu.png" alt="University of Texas at Arlington" width="100" height="100" style="float: left; margin-right: 20px;">
   <div>
     <h3>University of Texas Arlington</h3>
-    <p style="line-height: 0.4;"><strong>Bachelor of Science in Electrical Engineering with Honors</strong></p>
-    <p style="line-height: 0.4;">Arlington, TX, Aug 2017 - May 2021 </p>
-    <p style="line-height: 0.4;">Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties </p>
+    <p style="line-height: 0.6;"><strong>Bachelor of Science in Electrical Engineering with Honors</strong></p>
+    <p style="line-height: 0.6;">Arlington, TX, Aug 2017 - May 2021 </p>
+    <p style="line-height: 0.6;">Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties </p>
   </div>
 </div>
 
@@ -56,8 +56,8 @@ Work experience
   <img src="/images/tamuwork.jpeg" alt="Texas A&M University" width="100" height="100" style="float: left; margin-right: 20px;">
   <div>
     <h3>Texas A&M University</h3>
-    <p style="line-height: 0.4;"><strong>Graduate Research Assistant</strong></p>
-    <p style="line-height: 0.4;">College Station, TX, Aug 2021 - Est. 2025</p>
+    <p style="line-height: 0.6;"><strong>Graduate Research Assistant</strong></p>
+    <p style="line-height: 0.6;">College Station, TX, Aug 2021 - Est. 2025</p>
   </div>
 </div>
 
@@ -71,8 +71,8 @@ Work experience
   <img src="/images/samsungsemiconductor_logo.jpeg" alt="Samsung" width="100" height="100" style="float: left; margin-right: 20px;">
   <div>
     <h3>Samsung Semiconductor Inc.</h3>
-    <p style="line-height: 0.4;"><strong>Machine Learning Systems Research</strong></p>
-    <p style="line-height: 0.4;">San Jose, CA, May 2022 - Aug 2022 </p>
+    <p style="line-height: 0.6;"><strong>Machine Learning Systems Research</strong></p>
+    <p style="line-height: 0.6;">San Jose, CA, May 2022 - Aug 2022 </p>
   </div>
 </div>
 
@@ -86,8 +86,8 @@ Work experience
   <img src="/images/utawork1.png" alt="Samsung" width="100" height="100" style="float: left; margin-right: 20px;">
   <div>
     <h3>University of Texas Arlington</h3>
-    <p style="line-height: 0.4;"><strong>Undergraduate Research and Teaching Assistant</strong></p>
-    <p style="line-height: 0.4;">Arlington, TX, Aug 2019 - May 2021 </p>
+    <p style="line-height: 0.6;"><strong>Undergraduate Research and Teaching Assistant</strong></p>
+    <p style="line-height: 0.6;">Arlington, TX, Aug 2019 - May 2021 </p>
   </div>
 </div>
 
