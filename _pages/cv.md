@@ -73,9 +73,19 @@ Work experience
 * Delivered 2 patents applications for efficient Neural Information Retrieval system design during the internship.  
 
 
-**University of Texas Arlington**  
-&nbsp; **Undergraduate Research and Teaching Assistant**  
-&nbsp; Arlington, TX, Aug 2019 - May 2021  
+<div style="display: flex; align-items: center;">
+  <img src="/images/utawork.png" alt="Samsung" width="100" height="100" style="float: left; margin-right: 20px;">
+  <div>
+    <h3>University of Texas Arlington</h3>
+    <p style="line-height: 0.2;"><strong>Undergraduate Research and Teaching Assistant</strong></p>
+    <p style="line-height: 0.2;">Arlington, TX, Aug 2019 - May 2021 </p>
+  </div>
+</div>
+
+
+****  
+&nbsp; ****  
+&nbsp;  
 *  Developed signal processing algorithms to measure dynamic soil properties using a Radar system, simulated, designed, and fabricated electromagnetic sensors.  
 * Teaching assistant for EE2347, Mathematical Foundation of Electrical Engineering. Responsibilities: instructor for lab; taught sophomores algorithms and introduction to python, graded assignments.  
 * Teaching assistant for EE3407, Fundamentals of Electromagnetics. Responsibilites: conducted study sessions and exam reviews. Assisted in redesigning lab experiments with integration of new simulation tools like Ansys HFSS.  
