@@ -13,7 +13,16 @@ redirect_from:
 
 Education
 ======
-<img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
+
+<div style="display: flex; align-items: center;">
+  <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100" style="float: left; margin-right: 20px;">
+  <div>
+    <h3>Texas A&M University</h3>
+    <p><strong>Doctor of Philosophy in Computer Engineering</strong></p>
+    <p>College Station, TX, Aug 2021 - Est. 2025</p>
+    <p>Thesis: Hardware Efficient ML System Design in Knowledge Retrieval</p>
+  </div>
+</div>
 
 * **Texas A&M University**  
 &nbsp; **Doctor of Philosophy in Computer Engineering**   
