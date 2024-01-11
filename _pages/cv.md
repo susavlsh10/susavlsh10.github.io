@@ -8,37 +8,13 @@ redirect_from:
 ---
 
 {% include base_path %}
-
-.education-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.education-item img {
-  float: left;
-  margin-right: 20px;
-}
-
-@media (max-width: 600px) {
-  .education-item {
-    flex-direction: column;
-  }
-
-  .education-item img {
-    float: none;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
 [Resume](https://github.com/susavlsh10/susavlsh10.github.io/blob/master/files/sls_resume.pdf)  
 
 
 Education
 ======
 
-<div class="education-item">
+<div class="display: flex; align-items: center;">
   <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
   <div>
     <h3>Texas A&M University</h3>
@@ -48,7 +24,7 @@ Education
   </div>
 </div>
 
-<div class="education-item">
+<div class="display: flex; align-items: center;">
   <img src="/images/utaedu.png" alt="University of Texas at Arlington" width="100" height="100">
   <div>
     <h3>University of Texas Arlington</h3>
