@@ -14,24 +14,23 @@ redirect_from:
 Education
 ======
 
-<div style="display: flex; align-items: center;">
-  <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100" style="float: left; margin-right: 20px;">
+<div class="education-item">
+  <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
   <div>
     <h3>Texas A&M University</h3>
-    <p style="line-height: 0.6;"><strong>Doctor of Philosophy in Computer Engineering</strong></p>
-    <p style="line-height: 0.6;">College Station, TX, Aug 2021 - Est. 2025</p>
-    <p style="line-height: 0.6;">Thesis: Hardware Efficient ML System Design in Knowledge Retrieval</p>
+    <p><strong>Doctor of Philosophy in Computer Engineering</strong></p>
+    <p>College Station, TX, Aug 2021 - Est. 2025</p>
+    <p>Thesis: Hardware Efficient ML System Design in Knowledge Retrieval</p>
   </div>
 </div>
 
-
-<div style="display: flex; align-items: center;">
-  <img src="/images/utaedu.png" alt="University of Texas at Arlington" width="100" height="100" style="float: left; margin-right: 20px;">
+<div class="education-item">
+  <img src="/images/utaedu.png" alt="University of Texas at Arlington" width="100" height="100">
   <div>
     <h3>University of Texas Arlington</h3>
-    <p style="line-height: 0.6;"><strong>Bachelor of Science in Electrical Engineering with Honors</strong></p>
-    <p style="line-height: 0.6;">Arlington, TX, Aug 2017 - May 2021 </p>
-    <p style="line-height: 0.6;">Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties </p>
+    <p><strong>Bachelor of Science in Electrical Engineering with Honors</strong></p>
+    <p>Arlington, TX, Aug 2017 - May 2021</p>
+    <p>Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties</p>
   </div>
 </div>
 
