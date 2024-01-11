@@ -13,7 +13,7 @@ redirect_from:
 
 Education
 ======
-<img src="/images/tamuedu.png" alt="Texas A&M University" width="200" height="200">
+<img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
 
 * **Texas A&M University**  
 &nbsp; **Doctor of Philosophy in Computer Engineering**   
