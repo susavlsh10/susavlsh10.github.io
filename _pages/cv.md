@@ -18,9 +18,9 @@ Education
   <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100" style="float: left; margin-right: 20px;">
   <div>
     <h3>Texas A&M University</h3>
-    <p style="line-height: 1.2;"><strong>Doctor of Philosophy in Computer Engineering</strong></p>
-    <p style="line-height: 1.2;">College Station, TX, Aug 2021 - Est. 2025</p>
-    <p style="line-height: 1.2;">Thesis: Hardware Efficient ML System Design in Knowledge Retrieval</p>
+    <p style="line-height: 0.8;"><strong>Doctor of Philosophy in Computer Engineering</strong></p>
+    <p style="line-height: 0.8;">College Station, TX, Aug 2021 - Est. 2025</p>
+    <p style="line-height: 0.8;">Thesis: Hardware Efficient ML System Design in Knowledge Retrieval</p>
   </div>
 </div>
 
