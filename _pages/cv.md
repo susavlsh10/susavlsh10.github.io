@@ -24,16 +24,16 @@ Education
   </div>
 </div>
 
-* **Texas A&M University**  
-&nbsp; **Doctor of Philosophy in Computer Engineering**   
-&nbsp; College Station, TX, Aug 2021 - Est. 2025  
-&nbsp; Thesis: Hardware Efficient ML System Design in Knowledge Retrieval
 
-* **University of Texas Arlington**  
-&nbsp; **Bachelor of Science in Electrical Engineering with Honors**  
-&nbsp; Arlington, TX, Aug 2017 - May 2021   
-&nbsp; Minor in Computer Science  
-&nbsp; Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties  
+<div style="display: flex; align-items: center;">
+  <img src="/images/utaedu.png" alt="University of Texas at Arlington" width="100" height="100" style="float: left; margin-right: 20px;">
+  <div>
+    <h3>University of Texas Arlington</h3>
+    <p style="line-height: 0.2;"><strong>Bachelor of Science in Electrical Engineering with Honors</strong></p>
+    <p style="line-height: 0.2;">Arlington, TX, Aug 2017 - May 2021 </p>
+    <p style="line-height: 0.2;">Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties </p>
+  </div>
+</div>
 
 Publications
 ======
