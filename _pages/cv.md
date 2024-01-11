@@ -52,17 +52,21 @@ Work experience
   </div>
 </div>
 
-<!-- **Texas A&M University**   
-&nbsp; **Graduate Research Assistant**  
-&nbsp; College Station, TX, Aug 2021 - Present -->
 * Led efforts to develop more efficient systems for deep learning applications; Neural Information Retrieval (IR).
 * Trained a BERT based model for IR using pytorch and knowledge distillation with Recall@1K of 96%.
 * Developed a novel embedding processing system with Nvidia GDS & custom CUDA kernels achieving 23% speedup.
 * Designed a flexible software prefetcher for Neural IR systems achieving hit rates exceeding 90%, allowing embeddings to be retrieved from storage with near memory latency with 16x less memory footprint.  
 
-**Samsung Semiconductor Inc.**  
-&nbsp; **Machine Learning Systems Research**  
-&nbsp; San Jose, CA, May 2022 - Aug 2022  
+
+<div style="display: flex; align-items: center;">
+  <img src="/images/samsungsemiconductor_logo.jpeg" alt="Samsung" width="100" height="100" style="float: left; margin-right: 20px;">
+  <div>
+    <h3>Samsung Semiconductor Inc.</h3>
+    <p style="line-height: 0.2;"><strong>Machine Learning Systems Research</strong></p>
+    <p style="line-height: 0.2;">San Jose, CA, May 2022 - Aug 2022 </p>
+  </div>
+</div>
+
 * Developed a novel IR embedding retrieval and processing architecture, leveraging SmartSSD with custom similarity computation kernels (FPGA) to offload similarity processing close to storage.  
 * Reduced CPU workload by 4x, reduced memory usage by 82% without degrading retrieval quality of the IR model.  
 * Accelerated neural inference by 64% by compressing the model with knowledge distillation, pruning and quantization.  
