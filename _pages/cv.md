@@ -8,6 +8,30 @@ redirect_from:
 ---
 
 {% include base_path %}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.education-item img {
+  float: left;
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .education-item {
+    flex-direction: column;
+  }
+
+  .education-item img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
 [Resume](https://github.com/susavlsh10/susavlsh10.github.io/blob/master/files/sls_resume.pdf)  
 
 
