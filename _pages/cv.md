@@ -43,10 +43,18 @@ Publications
 Work experience
 ======
 
+<div style="display: flex; align-items: center;">
+  <img src="/images/tamuwork.jpeg" alt="Texas A&M University" width="100" height="100" style="float: left; margin-right: 20px;">
+  <div>
+    <h3>Texas A&M University</h3>
+    <p style="line-height: 0.2;"><strong>Graduate Research Assistant</strong></p>
+    <p style="line-height: 0.2;">College Station, TX, Aug 2021 - Est. 2025</p>
+  </div>
+</div>
 
-**Texas A&M University**   
+<!-- **Texas A&M University**   
 &nbsp; **Graduate Research Assistant**  
-&nbsp; College Station, TX, Aug 2021 - Present
+&nbsp; College Station, TX, Aug 2021 - Present -->
 * Led efforts to develop more efficient systems for deep learning applications; Neural Information Retrieval (IR).
 * Trained a BERT based model for IR using pytorch and knowledge distillation with Recall@1K of 96%.
 * Developed a novel embedding processing system with Nvidia GDS & custom CUDA kernels achieving 23% speedup.
