@@ -40,6 +40,15 @@ Publications
 
 * **Shrestha, S.**, Annapareddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval.
 
+
+Honors
+======
+* Cambridge Learners Award 2015
+* Academic Excellence Award 2016
+* Dean’s List 2018-21
+* Innovation Day Award 2021
+
+
 Work experience
 ======
 
@@ -74,7 +83,7 @@ Work experience
 
 
 <div style="display: flex; align-items: center;">
-  <img src="/images/utawork.png" alt="Samsung" width="100" height="100" style="float: left; margin-right: 20px;">
+  <img src="/images/utawork1.png" alt="Samsung" width="100" height="100" style="float: left; margin-right: 20px;">
   <div>
     <h3>University of Texas Arlington</h3>
     <p style="line-height: 0.2;"><strong>Undergraduate Research and Teaching Assistant</strong></p>
@@ -82,10 +91,6 @@ Work experience
   </div>
 </div>
 
-
-****  
-&nbsp; ****  
-&nbsp;  
 *  Developed signal processing algorithms to measure dynamic soil properties using a Radar system, simulated, designed, and fabricated electromagnetic sensors.  
 * Teaching assistant for EE2347, Mathematical Foundation of Electrical Engineering. Responsibilities: instructor for lab; taught sophomores algorithms and introduction to python, graded assignments.  
 * Teaching assistant for EE3407, Fundamentals of Electromagnetics. Responsibilites: conducted study sessions and exam reviews. Assisted in redesigning lab experiments with integration of new simulation tools like Ansys HFSS.  
