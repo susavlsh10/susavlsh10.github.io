@@ -14,7 +14,8 @@ redirect_from:
 Education
 ======
 
-* **Texas A&M University**,  
+* ![Texas A&M University](/images/tamuedu.png)
+**Texas A&M University**,  
 &nbsp; **Doctor of Philosophy in Computer Engineering**   
 &nbsp; College Station, TX, Aug 2021 - Est. 2025  
 &nbsp; Thesis: Hardware Efficient ML System Design in Knowledge Retrieval
