@@ -47,8 +47,8 @@ Honors
 * Dean’s List 2018-21
 * Innovation Day Award 2021
 
-
-Work experience
+SS
+Work Experience
 ======
 
 <div style="display: flex; align-items: center;">
