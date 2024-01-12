@@ -10,19 +10,31 @@ redirect_from:
 {% include base_path %}
 [Resume](https://github.com/susavlsh10/susavlsh10.github.io/blob/master/files/sls_resume.pdf)  
 
-
+<div>
 Education
 ======
+</div>
 
+<table width="100%">
+<tr>
 <div class="display: flex; align-items: center;">
+
+<th width="5%">
   <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
+</th>
+
+<th width="100%">
   <div>
     <h3>Texas A&M University</h3>
     <p><strong>Doctor of Philosophy in Computer Engineering</strong></p>
     <p>College Station, TX, Aug 2021 - Est. 2025</p>
     <p>Thesis: Hardware Efficient ML System Design in Knowledge Retrieval</p>
   </div>
+  </th>
 </div>
+</tr>
+</table>
+
 
 <div class="display: flex; align-items: center;">
   <img src="/images/utaedu.png" alt="University of Texas at Arlington" width="100" height="100">
