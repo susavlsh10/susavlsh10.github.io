@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "CV"
-permalink: /cv/
+title: "CV2"
+permalink: /cv2/
 author_profile: true
 redirect_from:
   - /resume
@@ -13,6 +13,8 @@ redirect_from:
 
 Education
 ======
+
+* work in progress
 
 <div class="display: flex; align-items: center;">
   <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
