@@ -6,6 +6,19 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+<style>
+
+  *{
+    margin:0;
+    padding:0;
+  }
+  .img{
+    float: left;
+    margin-right: 15px;
+  }
+</style>
+
+
 
 {% include base_path %}
 [Resume](https://github.com/susavlsh10/susavlsh10.github.io/blob/master/files/sls_resume.pdf)  
