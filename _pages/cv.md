@@ -6,13 +6,6 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-<style>
-
-  .img_deg{
-    float: left;
-    margin-right: 15px;
-  }
-</style>
 
 
 
@@ -25,7 +18,7 @@ Education
 
 
 <div class="display: flex; align-items: center;">
-  <img class="img_deg"src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
+  <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
   <div >
     <h3>Texas A&M University</h3>
     <p><strong>Doctor of Philosophy in Computer Engineering</strong></p>
