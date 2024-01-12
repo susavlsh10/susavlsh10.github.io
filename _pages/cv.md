@@ -8,11 +8,7 @@ redirect_from:
 ---
 <style>
 
-  *{
-    margin:0;
-    padding:0;
-  }
-  .img{
+  .img_deg{
     float: left;
     margin-right: 15px;
   }
@@ -29,8 +25,8 @@ Education
 
 
 <div class="display: flex; align-items: center;">
-  <img src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
-  <div>
+  <img class="img_deg"src="/images/tamuedu.png" alt="Texas A&M University" width="100" height="100">
+  <div >
     <h3>Texas A&M University</h3>
     <p><strong>Doctor of Philosophy in Computer Engineering</strong></p>
     <p>College Station, TX, Aug 2021 - Est. 2025</p>
