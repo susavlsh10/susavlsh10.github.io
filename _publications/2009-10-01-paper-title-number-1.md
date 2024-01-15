@@ -2,7 +2,7 @@
 title: "ESPN: Memory Efficient Multi-Vector Information Retrieval"
 collection: publications
 permalink: /publication/ESPN
-excerpt: 'This paper is about ESPN. Embedding from Storage Pipeline Network for Multi-Vector Information Retrieval.'
+excerpt: 'Embedding from Storage Pipeline Network for Multi-Vector Information Retrieval.'
 date: 2023-12-09
 #venue: 'Journal 1'
 paperurl: 'https://arxiv.org/abs/2312.05417'
