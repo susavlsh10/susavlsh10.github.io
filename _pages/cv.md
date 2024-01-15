@@ -7,8 +7,14 @@ redirect_from:
   - /resume
 ---
 
+<head>
+  <meta name="description" content="This is a personal website of Susav Shrestha. This page consists of his resume or CV.">
+</head>
+
 {% include base_path %}
 [Resume](https://github.com/susavlsh10/susavlsh10.github.io/blob/master/files/sls_resume.pdf)  
+
+
 
 
 Education
