@@ -11,9 +11,9 @@ redirect_from:
 <meta name='description' content='This is a personal website of Susav Shrestha. Susav is a PhD candidate at Texas A&M Univeristy. Susav is studying Computer Engineering and focuses his research on optimizing deep learning systems.'>
 
 
-Computer Engineering | PhD student
+Computer Engineering | PhD candidate @ TAMU
 -------------------
 
 Working on democratizing deep learning and AI by building hardware efficient and scalable systems. 
 
-I'm a third-year Computer Engineering Ph.D. candidate at Texas A&M University. I'm interested in efficient Machine Learning (ML), Natural Language Processing (NLP), and building hardware efficient systems. 
+I'm a third-year Computer Engineering Ph.D. candidate at Texas A&M University being advised by [Dr. Narasimha Annapareddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). I'm interested in efficient Machine Learning (ML), Natural Language Processing (NLP), Parallel, Distributed Computing and building hardware efficient systems.
