@@ -3,11 +3,15 @@ permalink: /
 title: "Hello, I'm Susav."
 excerpt: "About me"
 author_profile: true
-description: "Susav is a PhD candidate at Texas A&M Univeristy. Susav is studying Computer Engineering and focuses his research on deep learning systems"
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<head>
+  <meta name="description" content="Susav is a PhD candidate at Texas A&M Univeristy. Susav is studying Computer Engineering and focuses his research on deep learning systems">
+
+</head>
 
 Computer Engineering | PhD candidate @ TAMU
 -------------------
