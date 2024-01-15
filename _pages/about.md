@@ -8,6 +8,9 @@ redirect_from:
   - /about.html
 ---
 
+<meta name='description' content='This is a personal website of Susav Shrestha. Susav is a PhD candidate at Texas A&M Univeristy. Susav is studying Computer Engineering and focuses his research on optimizing deep learning systems.'>
+
+
 Computer Engineering | PhD student
 -------------------
 
