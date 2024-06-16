@@ -23,5 +23,20 @@ I'm a third-year Computer Engineering Ph.D. candidate at Texas A&M University be
 
 ## Updates
 
-1. ESPN got accepted to ISMM24. 
-2. Started research internship at NVIDIA for Summer 2024 for optimizing batch LLM inferencing. 
+* ESPN got accepted to ISMM 2024. 
+## Timeline
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2024</h2>
+      <p>Started research internship at NVIDIA.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2023</h2>
+      <p>ESPN got accepted to ISMM24.</p>
+    </div>
+  </div>
+</div>
