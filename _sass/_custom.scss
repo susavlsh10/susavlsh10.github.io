@@ -53,3 +53,23 @@
     text-decoration: none;
   }
 }
+
+/* Custom style for the download resume link */
+.btn--download {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333 !important; // Dark text color
+  background-color: #f5f5f5; // Light gray background
+  border: 1px solid #ddd;
+  border-radius: 5px; // Slightly rounded corners
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #007bff; // Changes to blue on hover
+    color: #fff !important;   // Text becomes white on hover
+    text-decoration: none;
+  }
+}

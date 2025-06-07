@@ -12,7 +12,13 @@ redirect_from:
 </head>
 
 {% include base_path %}
-[Download Resume](/files/susav_resume_2025.pdf){: .btn .btn--success}  
+<!-- [Download Resume](/files/susav_resume_2025.pdf){: .btn .btn--success}   -->
+
+<p>
+  <a href="/files/sls_resume.pdf" class="btn btn--download">
+    <i class="fas fa-fw fa-download" aria-hidden="true"></i> Download Resume
+  </a>
+</p>
 
 Education
 ======
@@ -31,9 +37,9 @@ Education
 Work Experience
 ======
 
-**NVIDIA**,
+**NVIDIA**
 *Research Intern*  
-&nbsp; Austin, TX, May 2024 – Aug 2024*  
+&nbsp; Austin, TX, May 2024 – Aug 2024
 - Led research to accelerate LLM inference via activation and contextual sparsity.  
 - Built sparsely activated OPT and LLaMA models by training activation routers for MLP and Attention layers.  
 - Developed custom sparse GPU kernels achieving 1.5–3× speedup in MLP layers and up to 2.5× in Attention.  
