@@ -13,3 +13,43 @@
   text-decoration: none;
   background: darken($primary-color, 10%);
 }
+
+/* Custom styles for the publications page */
+.publication-item {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #e0e0e0; // Adds a separator line
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+/* Custom button style for publications */
+.btn--research {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.8em;
+  color: #fff !important;
+  background-color: #555; // A neutral dark gray
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: #007bff; // A nice blue for hover
+    text-decoration: none;
+  }
+}
