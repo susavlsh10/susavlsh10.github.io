@@ -37,7 +37,7 @@ Education
 Work Experience
 ======
 
-**NVIDIA**
+**NVIDIA**  
 *Research Intern*  
 &nbsp; Austin, TX, May 2024 – Aug 2024
 - Led research to accelerate LLM inference via activation and contextual sparsity.  
