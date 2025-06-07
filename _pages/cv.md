@@ -12,7 +12,7 @@ redirect_from:
 </head>
 
 {% include base_path %}
-[Resume](https://github.com/susavlsh10/susavlsh10.github.io/blob/master/files/sls_resume.pdf)  
+[Download Resume as PDF](/files/sls_resume.pdf){: .btn .btn--success}  
 
 
 
@@ -48,23 +48,17 @@ Honors
 Work Experience
 ======
 
-**Texas A&M University**  
-&nbsp; **Graduate Research Assistant**  
-&nbsp; College Station, TX, Aug 2021 - Est. 2025  
-* Led efforts to develop more efficient systems for deep learning applications; Neural Information Retrieval (IR).
-* Trained a BERT based model for IR using pytorch and knowledge distillation with Recall@1K of 96%.
-* Developed a novel embedding processing system with Nvidia GDS & custom CUDA kernels achieving 23% speedup.
-* Designed a flexible software prefetcher for Neural IR systems achieving hit rates exceeding 90%, allowing embeddings to be retrieved from storage with near memory latency with 16x less memory footprint.  
-
 **Samsung Semiconductor Inc.**  
-&nbsp; **Machine Learning Systems Research**  
+*Research Intern*  
 &nbsp; San Jose, CA, May 2022 - Aug 2022  
+- Reduced CPU workload by 4x and accelerated neural inference by 64% by optimizing data pipeline and model execution.  
+- Filed 2 patent applications for efficient neural network deployment on edge devices.  
 
-* Developed a novel IR embedding retrieval and processing architecture, leveraging SmartSSD with custom similarity computation kernels (FPGA) to offload similarity processing close to storage.  
-* Reduced CPU workload by 4x, reduced memory usage by 82% without degrading retrieval quality of the IR model.  
-* Accelerated neural inference by 64% by compressing the model with knowledge distillation, pruning and quantization.  
-* Delivered 2 patents applications for efficient Neural Information Retrieval system design during the internship.  
-
+**Texas A&M University**  
+*Graduate Research Assistant*  
+&nbsp; College Station, TX, Aug 2021 - Est. 2025  
+- Led a project that resulted in a 23% speedup in embedding processing for large-scale information retrieval.  
+- Developed scalable multi-vector retrieval systems for large language models.  
 
 **University of Texas Arlington**  
 &nbsp; **Undergraduate Research and Teaching Assistant**  
@@ -85,7 +79,7 @@ Skills
 ======
 
 **Relevant Coursework**: Advance Computer Architecture, Parallel Computing, Distributed Processing, Deep Learning,Machine Learning, NLP, Information Retrieval, Memory & Storage Systems, Operating Systems, Advanced Algorithms.  
-**Technical**: C/C++, Python, Java, CUDA, MATLAB, OpenCL, OpenMP, Pthreads, MPI, Pytorch, Scikit-learn, gRPC, Hadoop, Azure, AWS, Spark, Verilog, VHDL, Vitis/Vivado HLS, Object Oriented Programming (OOP), GIT, Linux.  
+**Technical**: C/C++, Python, Java, CUDA, MATLAB, OpenCL, OpenMP, Pthreads, MPI, Pytorch, Scikit-learn, gRPC, Hadoop, Azure, AWS, Spark, Verilog, VHDL, Vitis/Vivado HLS, Object Oriented Programming (OOP), GIT, Linux.
 
 
 

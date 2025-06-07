@@ -18,7 +18,7 @@ Computer Engineering | PhD candidate @ TAMU
 
 Working on democratizing deep learning and AI by building hardware efficient and scalable systems. 
 
-I'm a third-year Computer Engineering Ph.D. candidate at Texas A&M University being advised by [Dr. Narasimha Annapareddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). I'm interested in efficient Machine Learning (ML), Natural Language Processing (NLP), Parallel, Distributed Computing and building hardware efficient systems.
+I'm a third-year Computer Engineering Ph.D. candidate at Texas A&M University, seeking research and development roles in machine learning systems where I can apply my expertise in building hardware-efficient and scalable solutions. I'm advised by [Dr. Narasimha Annapareddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). I'm interested in efficient Machine Learning (ML), Natural Language Processing (NLP), Parallel, Distributed Computing and building hardware efficient systems.
 
 ## Updates
 
