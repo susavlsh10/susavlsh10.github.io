@@ -31,29 +31,6 @@ Education
 &nbsp; Arlington, TX, Aug 2017 - May 2021  
 &nbsp; Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties  
 
-Publications
-======
-
-<!-- * **Shrestha, S.**, Annapareddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval. -->
-
-* **Shrestha, S.**, Settlemyer, B., Dryden, N., & Reddy, N. (2025). Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity. *arXiv preprint*. [https://arxiv.org/abs/2505.14884](https://arxiv.org/abs/2505.14884)
-
-* **Shrestha, S.**, Reddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval. In *Proceedings of the ACM SIGPLAN International Symposium on Memory Management (ISMM 2024)*. [https://doi.org/10.1145/3652024.3665515](https://doi.org/10.1145/3652024.3665515)
-
-* **Shrestha, S.**, Gautam, A., & Reddy, N. (2025). Storage Access Optimization for Efficient GPU‑Centric Information Retrieval. *The Journal of Supercomputing*. [https://link.springer.com/article/10.1007/s11227-025-07118-9](https://link.springer.com/article/10.1007/s11227-025-07118-9)
-
-* Gautam, A., **Shrestha, S.**, & Reddy, N. (2025). Token-Driven GammaTune: Adaptive Calibration for Enhanced Speculative Decoding. *arXiv preprint*. [https://arxiv.org/abs/2504.00030](https://arxiv.org/abs/2504.00030)  
-  _*Equal contribution_
-
-
-Honors
-======
-* Cambridge Learners Award 2015
-* Academic Excellence Award 2016
-* Dean’s List 2018-21
-* Innovation Day Award 2021
-
-
 Work Experience
 ======
 
@@ -90,6 +67,40 @@ Work Experience
 * 1 on 1 tutoring for UTSI. Academic tutor for Calculus I & II, Physcis I & II, Chemistry.
 * Supplimental Instructor (SI Leader) for UTSI. SI leader for Calculus III, Differential Equation & Linear Algebra. Responsibilites: conducted biweekly study sessions, helped students learn course material and exam reviews.
 * Supplimental Instructor Mentor for UTSI. Responsibilities: Managed and mentored 5-6 SI leaders per semester. Conducted training for SI leaders, hosted weekly mentoring sessions.
+
+Publications
+======
+
+<!-- * **Shrestha, S.**, Annapareddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval. -->
+
+* **Shrestha, S.**, Settlemyer, B., Dryden, N., & Reddy, N. (2025). Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity. *arXiv preprint*. [https://arxiv.org/abs/2505.14884](https://arxiv.org/abs/2505.14884)
+
+* **Shrestha, S.**, Reddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval. In *Proceedings of the ACM SIGPLAN International Symposium on Memory Management (ISMM 2024)*. [https://doi.org/10.1145/3652024.3665515](https://doi.org/10.1145/3652024.3665515)
+
+* **Shrestha, S.**, Gautam, A., & Reddy, N. (2025). Storage Access Optimization for Efficient GPU‑Centric Information Retrieval. *The Journal of Supercomputing*. [https://link.springer.com/article/10.1007/s11227-025-07118-9](https://link.springer.com/article/10.1007/s11227-025-07118-9)
+
+* Gautam, A., **Shrestha, S.**, & Reddy, N. (2025). Token-Driven GammaTune: Adaptive Calibration for Enhanced Speculative Decoding. *arXiv preprint*. [https://arxiv.org/abs/2504.00030](https://arxiv.org/abs/2504.00030)  
+  _*Equal contribution_
+
+Patents
+======
+
+**System and Method for Embeddings Retrieval**  
+*US20240330193A1* — Samsung Electronics Co., Ltd.  
+[Link](https://patents.google.com/patent/US20240330193A1/en)
+
+**System and Method for Processing Embeddings**  
+*US20240330290A1* — Samsung Electronics Co., Ltd.  
+[Link](https://patents.google.com/patent/US20240330290A1/en)
+
+
+Honors
+======
+* Cambridge Learners Award 2015
+* Academic Excellence Award 2016
+* Dean’s List 2018-21
+* Innovation Day Award 2021
+
 
 Skills
 ======
