@@ -23,10 +23,16 @@
       opacity: 1;
     }
     // new styles
-    background: #f1f1f1; /* A light gray background */
-    border: 1px solid #dcdcdc; /* A subtle border */
-    border-radius: 15px; /* Rounded corners */
-    padding: 1.5em; /* Adds some space around the content */
+    // background: #f1f1f1; /* A light gray background */
+    // border: 1px solid #dcdcdc; /* A subtle border */
+    // border-radius: 15px; /* Rounded corners */
+    // padding: 1.5em; /* Adds some space around the content */
+
+    padding: 2.0em;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* This creates the shadow effect */
+    background: #ffffff; /* A white background to make the shadow visible */
+
 
   }
 
