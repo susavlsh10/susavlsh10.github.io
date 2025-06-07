@@ -369,15 +369,52 @@
    Table of contents navigation
    ========================================================================== */
 
+// .toc {
+//   font-family: $sans-serif-narrow;
+//   color: $gray;
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+//   background-color: #fff;
+//   border: 1px solid $border-color;
+//   border-radius: $border-radius;
+//   box-shadow: $box-shadow;
+
+//   .nav__title {
+//     color: #fff;
+//     font-size: $type-size-6;
+//     background: $primary-color;
+//     border-top-left-radius: $border-radius;
+//     border-top-right-radius: $border-radius;
+//     // display: block;
+//     // padding: 0.5rem 1rem;
+//   }
+
+// }
+
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #fff;
-  border: 1px solid $border-color;
+  border: 1px solid $border-color; // This will create a border on all sides
   border-radius: $border-radius;
   box-shadow: $box-shadow;
+
+  // Added styles for fixed right panel
+  position: fixed;
+  top: 80px;      // Adjust based on your header's height or desired top margin
+  right: 20px;    // Distance from the right edge of the viewport
+  width: 260px;   // Width of the TOC panel
+  max-height: calc(100vh - 100px); // Adjust max height; 100px = top + bottom margin
+  overflow-y: auto; // Adds a scrollbar if TOC content is taller than max-height
+  z-index: 1020;  // Ensures the TOC panel stays on top of other content
+
+  // If the TOC was previously part of a flex or grid layout,
+  // or had margins that pushed content, you might need to reset those.
+  // For example:
+  // margin-left: 0;
+  // margin-right: 0;
 
   .nav__title {
     color: #fff;
@@ -385,11 +422,22 @@
     background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
-    // display: block;
-    // padding: 0.5rem 1rem;
+    // display: block; // Uncomment if needed, but usually fine
+    // padding: 0.5rem 1rem; // Already in your theme, likely fine
+    position: -webkit-sticky; // Make title sticky within the scrolling TOC panel
+    position: sticky;
+    top: 0; // Stick to the top of the .toc container
+    z-index: 1; // Ensure title is above toc__menu items during scroll
+    background-color: $primary-color; // Ensure background covers scrolled content
   }
 
+  // To prevent the nav__title from losing its top border radius when sticky
+  & > .nav__title {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
 }
+
 
 .toc__menu {
   margin: 0;
