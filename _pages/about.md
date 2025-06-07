@@ -34,14 +34,10 @@ I am a PhD candidate in Computer Engineering at **Texas A&M University**, advise
 ## Selected Publications
 
 - **Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity**  
-  *Susav Shrestha, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy*  
-  [arXiv:2505.14884](https://arxiv.org/abs/2505.14884)
-  [Code](https://github.com/susavlsh10/Polar-Sparsity)  
+  *Susav Shrestha, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy* [arXiv:2505.14884](https://arxiv.org/abs/2505.14884) [Code](https://github.com/susavlsh10/Polar-Sparsity)  
 
 - **ESPN: Memory-Efficient Multi-vector Information Retrieval**  
-  *Susav Shrestha, Narasimha Reddy, Zongwang Li*  
-  In *Proceedings of ISMM 2024* ([ACM DL](https://doi.org/10.1145/3652024.3665515))  
-  [Code](https://github.com/susavlsh10/ESPN-v1)
+  *Susav Shrestha, Narasimha Reddy, Zongwang Li* In *Proceedings of ISMM 2024* ([ACM ](https://doi.org/10.1145/3652024.3665515)) [Code](https://github.com/susavlsh10/ESPN-v1)
 
 For the full list of my papers, visit the [publications page](/publications/).
 
