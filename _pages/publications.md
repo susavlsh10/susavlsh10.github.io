@@ -29,7 +29,7 @@ author_profile: true
 
 <div class="publication-item">
   <h3>Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity</h3>
-  <p><strong>Susav Shrestha</strong>, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy..</p>
+  <p><strong>Susav Shrestha</strong>, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy. arXiv, 2025.</p>
   <!-- <p><i>To Appear, 2025.</i></p> -->
   <a href="https://arxiv.org/abs/2505.14884" class="btn btn--research">PDF</a>
   <a href="https://github.com/susavlsh10/Polar-Sparsity" class="btn btn--research">Code</a>

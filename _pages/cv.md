@@ -34,7 +34,16 @@ Education
 Publications
 ======
 
-* **Shrestha, S.**, Annapareddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval.
+<!-- * **Shrestha, S.**, Annapareddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval. -->
+
+* **Shrestha, S.**, Settlemyer, B., Dryden, N., & Reddy, N. (2025). Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity. *arXiv preprint*. [https://arxiv.org/abs/2505.14884](https://arxiv.org/abs/2505.14884)
+
+* **Shrestha, S.**, Reddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval. In *Proceedings of the ACM SIGPLAN International Symposium on Memory Management (ISMM 2024)*. [https://doi.org/10.1145/3652024.3665515](https://doi.org/10.1145/3652024.3665515)
+
+* **Shrestha, S.**, Gautam, A., & Reddy, N. (2025). Storage Access Optimization for Efficient GPU‑Centric Information Retrieval. *The Journal of Supercomputing*. [https://link.springer.com/article/10.1007/s11227-025-07118-9](https://link.springer.com/article/10.1007/s11227-025-07118-9)
+
+* Gautam, A., **Shrestha, S.**, & Reddy, N. (2025). Token-Driven GammaTune: Adaptive Calibration for Enhanced Speculative Decoding. *arXiv preprint*. [https://arxiv.org/abs/2504.00030](https://arxiv.org/abs/2504.00030)  
+  _*Equal contribution_
 
 
 Honors
@@ -47,6 +56,13 @@ Honors
 
 Work Experience
 ======
+
+**NVIDIA**, Research Intern — Austin, TX  
+*May 2024 – Aug 2024*  
+- Led research to accelerate LLM inference via activation and contextual sparsity.  
+- Built sparsely activated OPT and LLaMA models by training activation routers for MLP and Attention layers.  
+- Developed custom sparse GPU kernels achieving 1.5–3× speedup in MLP layers and up to 2.5× in Attention.  
+- Delivered end-to-end decoding speedups up to 2.2× across diverse batch sizes and sequence lengths.  
 
 **Samsung Semiconductor Inc.**  
 *Research Intern*  
