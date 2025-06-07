@@ -1,10 +1,10 @@
-<!-- ---
+-- ---
 title: "Patents"
 permalink: /patents/
 layout: archive
 ---
 
-## Patent Applications
+<!-- ## Patent Applications
 
 1. **Efficient Neural Network Deployment on Edge Devices**  
    *Filed with Samsung Semiconductor Inc., 2023*  
@@ -15,11 +15,11 @@ layout: archive
    Description: Methods for optimizing data movement and processing for efficient neural network execution. -->
 
 
----
+<!-- ---
 title: "Patents"
 permalink: /patents/
 author_profile: true
----
+--- -->
 
 ## Patent Applications
 
