@@ -2,7 +2,7 @@
 title: "ESPN: Memory Efficient Multi-Vector Information Retrieval"
 collection: publications
 permalink: /publication/ESPN
-excerpt: 'We introduce Embedding from Storage Pipelined Network (ESPN) where we offload the entire re-ranking embedding tables to SSDs and reduce the memory requirements by 5-16x. We design a software prefetcher with hit rates exceeding 90%, improving SSD based retrieval up to 6.4x, and demonstrate that we can maintain near memory levels of query latency even for large query batch sizes.'
+excerpt: ''
 date: Dec 2023
 description: "This page consists of the paper titled ESPN. Embedding from Storage Pipelined Network for Multi-vector Information Retrieval."
 #venue: 'Journal 1'
