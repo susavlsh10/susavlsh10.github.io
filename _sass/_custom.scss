@@ -1,0 +1,15 @@
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: none;
+  background: $primary-color;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  z-index: 100;
+}
+.back-to-top:hover {
+  text-decoration: none;
+  background: darken($primary-color, 10%);
+}
