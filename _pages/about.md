@@ -3,6 +3,8 @@ permalink: /
 title: "Hello, I'm Susav."
 excerpt: "About me"
 author_profile: true
+toc: true
+toc_sticky: true
 redirect_from:
   - /about/
   - /about.html
@@ -12,12 +14,7 @@ redirect_from:
   <meta name="description" content="Susav is a PhD candidate at Texas A&M University. Susav is studying Computer Engineering and focuses his research on deep learning systems">
 </head>
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Papers](#papers)
-- [Experience](#experience)
-- [Patents](#patents)
-- [Updates](#updates)
+{% include toc %}
 
 ## Introduction
 Computer Engineering | PhD candidate @ TAMU
