@@ -32,21 +32,17 @@ I am a PhD candidate in Computer Engineering at **Texas A&M University**, advise
 
 ### Selected Publications
 
-- **Polar Sparsity**: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity  
-  * **Susav Shrestha**, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy* [arXiv:2505.14884](https://arxiv.org/abs/2505.14884) [Code](https://github.com/susavlsh10/Polar-Sparsity)  
+- **Polar Sparsity**: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity
+**Susav Shrestha**, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy. [arXiv:2505.14884](https://arxiv.org/abs/2505.14884) [Code](https://github.com/susavlsh10/Polar-Sparsity)  
 
 - **ESPN**: Memory-Efficient Multi-vector Information Retrieval  
-  * **Susav Shrestha**, Narasimha Reddy, Zongwang Li* In *Proceedings of ISMM 2024* ([ACM ](https://doi.org/10.1145/3652024.3665515)) [Code](https://github.com/susavlsh10/ESPN-v1)
-
-For the full list of my papers, visit the [publications page](/publications/).
+**Susav Shrestha**, Narasimha Reddy, Zongwang Li* In *Proceedings of ISMM 2024([ACM ](https://doi.org/10.1145/3652024.3665515)) [Code](https://github.com/susavlsh10/ESPN-v1)
 
 ## Selected Experience
 
-- **Research Intern, NVIDIA (2024)**  
-  Developed sparsity-aware LLMs and custom GPU kernels, delivering up to **2.2× end-to-end speedups** for batched inference in OPT and LLaMA models.
-
-- **Research Intern, Samsung Semiconductor (2022)**  
-  Built SmartSSD-based retrieval pipelines using FPGA-accelerated similarity kernels, reducing memory usage by **82%** and CPU load by **4×**, resulting in **2 patent applications**.
+- Research Intern, NVIDIA, Santa Clara 2025
+- Research Intern, NVIDIA, Austin, TX 2024
+- Research Intern, Samsung Semiconductor, San Jose, CA 2022  
 
 ### Updates
 - 🔬 Started a **Research Internship at NVIDIA** for Summer 2025 in Santa Clara  
