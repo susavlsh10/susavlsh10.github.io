@@ -15,7 +15,7 @@ redirect_from:
 <!-- [Download Resume](/files/susav_resume_2025.pdf){: .btn .btn--success}   -->
 
 <p>
-  <a href="/files/sls_resume.pdf" class="btn btn--download">
+  <a href="/files/susav_resume_2025.pdf" class="btn btn--download">
     <i class="fas fa-fw fa-download" aria-hidden="true"></i> Download Resume
   </a>
 </p>
