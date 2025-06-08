@@ -37,7 +37,7 @@ author_profile: true
 
 <div class="publication-item">
   <h3>ESPN: Memory Efficient Multi-Vector Information Retrieval</h3>
-  <p><strong>Susav Shrestha</strong>, Narasimha Reddy, Zongwang Li. ISMM, 2024.</p>
+  <p><strong>Susav Shrestha</strong>, Narasimha Reddy, Zongwang Li. ISMM 2024.</p>
   <p><i> </i></p>
   <a href="https://dl.acm.org/doi/10.1145/3652024.3665515" class="btn btn--research">PDF</a>
   <a href="https://github.com/susavlsh10/espn" class="btn btn--research">Code</a>
