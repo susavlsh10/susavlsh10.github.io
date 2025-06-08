@@ -18,7 +18,7 @@ redirect_from:
 
 I specialize in building **efficient and scalable machine learning systems** for real-world deployment. My work bridges the gap between algorithm design and system-level efficiency, with a focus on **accelerating large-scale inference** through hardware-aware design, sparsity, and parallelism.
 
-I am a PhD candidate in Computer Engineering at **Texas A&M University**, advised by [Dr. Narasimha Annapareddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). 
+I am a PhD candidate in Computer Engineering at **Texas A&M University**, advised by [Dr. Narasimha Reddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). 
 
 ---
 ### Research Interests
