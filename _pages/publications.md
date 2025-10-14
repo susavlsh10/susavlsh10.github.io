@@ -33,6 +33,7 @@ author_profile: true
   <!-- <p><i>To Appear, 2025.</i></p> -->
   <a href="https://arxiv.org/abs/2505.14884" class="btn btn--research">PDF</a>
   <a href="https://github.com/susavlsh10/Polar-Sparsity" class="btn btn--research">Code</a>
+  <a href="/polar-sparsity/" class="btn btn--research">Project Page</a>
   </div>
 
 <div class="publication-item">

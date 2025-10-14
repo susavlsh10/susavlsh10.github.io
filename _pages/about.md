@@ -41,5 +41,4 @@ I am a PhD candidate in Computer Engineering at **Texas A&M University**, advise
 - Research Intern, Samsung Semiconductor, San Jose, CA, May - Aug 2022  
 
 ### Updates
-- 🔬 Started a **Research Internship at NVIDIA** for Summer 2025 in Santa Clara  
-- 📄 Released new paper on [Polar Sparsity](https://arxiv.org/abs/2505.14884) with up to **2.2× decoding speedup** in LLM inference  
+- 📄 [Polar Sparsity](https://arxiv.org/abs/2505.14884) accepted at NeurIPS 2025. 
