@@ -1,148 +1,128 @@
 ---
-layout: single
-title: "Polar Sparsity"
-permalink: /polar-sparsity/
-classes: wide
+title: "Polar Sparsity: High-Throughput Batched LLM Inferencing"
+excerpt: "Accelerating large language model (LLM) inference with scalable contextual sparsity, achieving up to 2.2x speedups."
+tags:
+  - LLM
+  - Inference
+  - Sparsity
+  - High-Performance Computing
+  - GPU
 ---
 
 <div class="polar-hero">
-  <div class="polar-hero__content">
-    <p class="polar-hero__eyebrow">High-throughput batched LLM inference</p>
-    <h1>Polar Sparsity</h1>
-    <p class="polar-hero__lead">
-      Polar Sparsity unlocks large-batch inference on modern GPU servers by aligning contextual sparsity with hardware-friendly execution. It keeps attention computation sparse and selective even as batch sizes grow, delivering consistent acceleration without accuracy loss.
-    </p>
-    <div class="polar-hero__cta">
-      <a href="https://arxiv.org/abs/2505.14884" class="btn btn--primary" target="_blank" rel="noopener">Read the paper</a>
-      <a href="https://github.com/susavlsh10/Polar-Sparsity" class="btn btn--inverse" target="_blank" rel="noopener">Browse the code</a>
+  <h1>Polar Sparsity</h1>
+  <p class="polar-subtitle">High-Throughput Batched LLM Inferencing with Scalable Contextual Sparsity</p>
+  <a href="#resources" class="btn btn--primary">Resources</a>
+  <a href="https://github.com/susavlsh10/Polar-Sparsity" class="btn">GitHub Repository</a>
+</div>
+
+<div class="polar-section">
+  <h2>The Challenge of Large-Batch LLM Inference</h2>
+  <p>Modern Large Language Models (LLMs) are incredibly powerful, but their immense size makes them computationally expensive to run, especially in real-world scenarios that demand high throughput and low latency. While methods like contextual sparsity—where only a subset of the model's parameters are activated for each input—show promise, they often struggle to scale effectively with large batch sizes. This is because as more inputs are processed together, the union of active neurons quickly approaches a dense computation, erasing the benefits of sparsity.</p>
+</div>
+
+<div class="polar-section">
+  <h2>Introducing Polar Sparsity</h2>
+  <p>Polar Sparsity introduces a fundamental shift in how we approach sparsity in LLMs. We've identified that as batch sizes and sequence lengths increase, the computational bottleneck shifts from the MLP (Multi-Layer Perceptron) layers to the Attention layers. While MLP sparsity diminishes with larger batches, Attention head sparsity remains stable and batch-invariant. This "polar shift" is the key to unlocking scalable, high-throughput inference.</p>
+
+  <div class="card-deck">
+    <div class="card">
+      <h3>MLP Layers</h3>
+      <p>In smaller batches, MLP layers are the primary bottleneck. However, their sparsity degrades as the batch size grows, limiting the effectiveness of traditional sparsity techniques.</p>
+    </div>
+    <div class="card">
+      <h3>Attention Layers</h3>
+      <p>With larger batches, Attention layers become the dominant cost. Polar Sparsity leverages the fact that attention head sparsity is consistent across batch sizes, providing a reliable target for optimization.</p>
     </div>
   </div>
 </div>
 
-<section class="polar-section">
-  <h2>At a Glance</h2>
-  <div class="polar-grid">
-    <div class="polar-card">
-      <h3>Batch-Invariant Sparsity</h3>
-      <p>Polar coordinate routing preserves head-level sparsity as batches scale, preventing the dense-union effect that cripples traditional contextual sparsity approaches.</p>
-    </div>
-    <div class="polar-card">
-      <h3>Hardware-Aware Kernels</h3>
-      <p>Custom GPU kernels fuse routing, selection, and compute to keep memory footprints low, ensure coalesced access, and maximize SM occupancy.</p>
-    </div>
-    <div class="polar-card">
-      <h3>End-to-End Speedups</h3>
-      <p>OPT, LLaMA-2, and LLaMA-3 models see up to 2.2&times; throughput gains for long sequences under heavy batching while matching baseline accuracy.</p>
-    </div>
-  </div>
-</section>
-
-<section class="polar-section polar-section--highlight">
-  <div class="polar-section__content">
-    <h2>How Polar Sparsity Accelerates Large-Batch Server Inference</h2>
-    <ol class="polar-list">
-      <li><strong>Directional activation routing.</strong> We transform activation vectors into polar coordinates to learn sparsity patterns that scale with sequence length rather than batch size.</li>
-      <li><strong>Attention-first prioritization.</strong> The method intentionally shifts sparsity to attention heads, the new bottleneck in large-batch scenarios, while letting MLP layers densify when beneficial.</li>
-      <li><strong>Kernel-level fusion.</strong> Sparse attention and selective MLP kernels are co-designed with batching in mind: token grouping, block-sparse compute, and warp-aligned memory scheduling reduce launch overhead.</li>
-      <li><strong>Server-grade deployment.</strong> A queue-aware runtime batches requests, performs dynamic sparsity checks, and dispatches the right kernel variant for each micro-batch to maintain QoS.</li>
-    </ol>
-  </div>
-  <aside class="polar-aside">
-    <h3>Implementation Checklist</h3>
-    <ul>
-      <li>Integrate router training heads during fine-tuning.</li>
-      <li>Attach the sparse attention CUDA kernel to decoder blocks.</li>
-      <li>Enable adaptive batching in the serving stack.</li>
-      <li>Monitor kernel swap heuristics via tracing hooks.</li>
-    </ul>
-  </aside>
-</section>
-
-<section class="polar-section">
-  <h2>Architecture Overview</h2>
-  <p>The pipeline combines a learned router, sparse kernel suite, and inference-time runtime to align tokens with the most useful computation paths while avoiding redundant dense work.</p>
-  <div class="polar-media-grid">
-    <figure class="polar-figure">
-      <img src="/images/polar-sparsity/router-architecture.png" alt="Diagram of Polar Sparsity router and selective attention flow">
-      <figcaption>Router selects attention heads per token. Replace this placeholder image with the final architecture diagram.</figcaption>
-    </figure>
-    <figure class="polar-figure">
-      <img src="/images/polar-sparsity/kernel-stack.png" alt="Stacked blocks showing fused sparse CUDA kernels for MLP and Attention">
-      <figcaption>Kernel stack keeps memory access coalesced under heavy batching. Swap in your actual kernel schematic.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="polar-section polar-section--compressed">
-  <h2>Performance Snapshot</h2>
-  <div class="polar-metrics-grid">
-    <div class="metrics-card">
-      <span class="metrics-card__value">2.2&times;</span>
-      <span class="metrics-card__label">Throughput gain on OPT-13B @ batch 128, seq 2K</span>
-    </div>
-    <div class="metrics-card">
-      <span class="metrics-card__value">1.9&times;</span>
-      <span class="metrics-card__label">Latency reduction for LLaMA-3 70B multi-turn serving</span>
-    </div>
-    <div class="metrics-card">
-      <span class="metrics-card__value">&lt;1%</span>
-      <span class="metrics-card__label">Accuracy delta across evaluation suites</span>
-    </div>
-  </div>
-  <figure class="polar-figure polar-figure--wide">
-    <img src="/images/polar-sparsity/performance-trend.png" alt="Placeholder line chart showing Polar Sparsity speedups vs. batch size">
-    <figcaption>Insert the real throughput vs. batch-size graph here to visualize gains across deployment regimes.</figcaption>
-  </figure>
-</section>
-
-<section class="polar-section">
-  <h2>Server Deployment Flow</h2>
-  <div class="polar-timeline">
-    <div class="polar-timeline__item">
-      <h3>1. Request Intake</h3>
-      <p>Adaptive batching window groups compatible prompts while respecting SLA targets.</p>
-    </div>
-    <div class="polar-timeline__item">
-      <h3>2. Sparsity Decision</h3>
-      <p>Per-batch routing probes determine head activation sets and select the right kernel profile.</p>
-    </div>
-    <div class="polar-timeline__item">
-      <h3>3. Sparse Execution</h3>
-      <p>Attention kernels execute with static head masks, while MLP blocks downshift to dense computation where it improves throughput.</p>
-    </div>
-    <div class="polar-timeline__item">
-      <h3>4. Monitoring &amp; Feedback</h3>
-      <p>Lightweight telemetry captures head utilization, queueing delays, and fallback rates for continuous tuning.</p>
-    </div>
-  </div>
-</section>
-
-<section class="polar-section">
-  <h2>Resources</h2>
-  <ul class="polar-resources">
-    <li><strong>Paper:</strong> <a href="https://arxiv.org/abs/2505.14884" target="_blank" rel="noopener">arXiv: Polar Sparsity</a></li>
-    <li><strong>Code:</strong> <a href="https://github.com/susavlsh10/Polar-Sparsity" target="_blank" rel="noopener">GitHub Repository</a> &mdash; includes CUDA kernels, router training scripts, and deployment recipes.</li>
-    <li><strong>Slides (coming soon):</strong> Upload your presentation deck and link it here.</li>
-    <li><strong>Demo video (coming soon):</strong> Add a short walkthrough of the batching-aware runtime once ready.</li>
+<div class="polar-section">
+  <h2>Key Innovations</h2>
+  <p>To harness the power of Polar Sparsity, we've developed two novel, hardware-efficient GPU kernels:</p>
+  <ul>
+    <li><strong>Selective GEMM Kernel:</strong> A custom kernel for MLP computations that achieves up to a \(5.5\times\) speedup by dynamically selecting active neurons.</li>
+    <li><strong>Selective FlashAttention Kernel:</strong> An I/O-efficient kernel for attention computations that supports head/group sparsity, delivering up to a \(2.8\times\) speedup.</li>
   </ul>
-</section>
+</div>
 
-<section class="polar-section">
-  <h2>What to Add Next</h2>
-  <div class="polar-grid">
-    <div class="polar-card">
-      <h3>Inference Logs</h3>
-      <p>Embed interactive traces or Grafana screenshots that show latency distributions under real workloads.</p>
+<div class="polar-section">
+  <h2>Performance and Accuracy</h2>
+  <div class="metric-tiles">
+    <div class="tile">
+      <p class="metric">\(2.2\times\)</p>
+      <p class="label">End-to-End Speedup</p>
     </div>
-    <div class="polar-card">
-      <h3>User Stories</h3>
-      <p>Highlight how teams integrated Polar Sparsity into existing serving stacks or A/B deployed kernels.</p>
+    <div class="tile">
+      <p class="metric">&lt;1%</p>
+      <p class="label">Accuracy Loss</p>
     </div>
-    <div class="polar-card">
-      <h3>Extended Benchmarks</h3>
-      <p>Add tables comparing Polar Sparsity with speculative decoding, KV-cache compression, or mixture-of-experts baselines.</p>
+    <div class="tile">
+      <p class="metric">512</p>
+      <p class="label">Max Batch Size Tested</p>
     </div>
   </div>
-  <p class="polar-note">Tip: store supporting assets in <code>images/polar-sparsity/</code> to keep everything organized.</p>
-</section>
+  <p>We evaluated Polar Sparsity across a range of models, including OPT, LLaMA-2 & 3, Qwen, and Mistral, on various downstream tasks. Our approach delivers up to a \(2.2\times\) improvement in batched decoding throughput with negligible accuracy loss (typically within 1% of the dense baseline). These results were achieved on NVIDIA A100 GPUs and are competitive with or surpass state-of-the-art activation sparsity methods.</p>
+</div>
 
+<div class="polar-section">
+  <h2>Visualizing the Impact</h2>
+  <div class="figure-grid">
+    <div class="figure">
+      <img src="/images/polar-sparsity/placeholder.png" alt="Placeholder for Transformer Decode Latency Breakdown">
+      <p class="caption"><strong>Figure 1a from PDF:</strong> Transformer decode latency breakdown on A100 GPUs. This figure should be replaced with the bar chart from the paper showing how attention layers dominate latency as batch size increases.</p>
+    </div>
+    <div class="figure">
+      <img src="/images/polar-sparsity/placeholder.png" alt="Placeholder for OPT 66b Throughput">
+      <p class="caption"><strong>Figure 6b from PDF:</strong> Decode throughput for OPT 66b. This should be replaced with the bar chart comparing the throughput of Dense, Deja Vu, and Polar Sparsity across different batch sizes.</p>
+    </div>
+  </div>
+</div>
+
+<div class="polar-section">
+  <h2>Deployment and Future Directions</h2>
+  <p>Polar Sparsity is designed for practical, large-scale deployment. The system can be integrated into existing LLM serving frameworks with minimal changes. Our current implementation focuses on greedy decoding, but we see exciting opportunities to extend this work to other decoding strategies like beam search and speculative decoding.</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>Step 1: Router Training</h4>
+      <p>Lightweight routers are trained to predict which neurons and attention heads to activate for a given input. This is a one-time, offline process.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Step 2: Kernel Integration</h4>
+      <p>Our custom Selective GEMM and Selective FlashAttention kernels are integrated into the LLM's inference engine.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Step 3: High-Throughput Serving</h4>
+      <p>The system is now ready for high-throughput, batched inference, with dynamic sparsity applied at runtime.</p>
+    </div>
+  </div>
+
+  <p>Future work will explore dynamic, input-adaptive sparsity, as well as combining head sparsity with token sparsity for potentially multiplicative gains. We also aim to recover the minor accuracy drop through targeted fine-tuning, paving the way for lossless sparse inference.</p>
+</div>
+
+<div id="resources" class="polar-section">
+  <h2>Resources</h2>
+  <ul>
+    <li><a href="[Link to arXiv paper]"><strong>arXiv Paper:</strong> [Title of Paper]</a></li>
+    <li><a href="https://github.com/susavlsh10/Polar-Sparsity"><strong>GitHub Repository:</strong> Polar Sparsity</a></li>
+    <li><strong>Slides:</strong> [Coming Soon]</li>
+    <li><strong>Demo:</strong> [Coming Soon]</li>
+  </ul>
+</div>
+
+<div class="polar-section">
+  <h2>Suggestions for the Team</h2>
+  <h3>Additional Sections to Consider:</h3>
+  <ul>
+    <li><strong>FAQ:</strong> A section to answer common questions about Polar Sparsity, such as its applicability to different model architectures or its performance on specific hardware.</li>
+    <li><strong>Extended Benchmarks:</strong> A dedicated page with more detailed benchmark results, including different sequence lengths, hardware configurations, and a wider range of models.</li>
+    <li><strong>Testimonials:</strong> If/when available, quotes from users or researchers who have implemented or benefited from Polar Sparsity.</li>
+  </ul>
+  <h3>Missing Assets:</h3>
+  <ul>
+    <li><strong>High-resolution images for all figures from the PDF.</strong> The placeholder images should be replaced with the actual figures.</li>
+    <li><strong>Link to the arXiv paper.</strong> The current link is a placeholder and should be updated.</li>
+    <li><strong>A concise, non-technical "elevator pitch" for the hero section.</strong> The current text is good, but a more marketing-friendly version could also be beneficial.</li>
+  </ul>
+</div>
