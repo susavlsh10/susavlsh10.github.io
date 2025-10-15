@@ -10,17 +10,22 @@ tags:
   - GPU
 ---
 
+
 <div class="polar-hero">
   <h1>Polar Sparsity</h1>
   <p class="polar-subtitle">High-Throughput Batched LLM Inferencing with Scalable Contextual Sparsity</p>
-  <!-- === AUTHOR SECTION ADDED HERE === -->
 
+  <!-- === AUTHOR SECTION === -->
   <div class="polar-authors">
-  <div class="author">
-  <p class="author-name">Susav Shrestha, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy</p>
-  <!-- <p class="author-affiliation">Texas A&M University</p> -->
+    <div class="author">
+      <p class="author-name">
+        Susav Shrestha, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy
+      </p>
+      <!-- <p class="author-affiliation">Texas A&M University</p> -->
+    </div>
   </div>
   <!-- === END OF AUTHOR SECTION === -->
+
   <a href="#resources" class="btn btn--primary">Resources</a>
   <a href="https://github.com/susavlsh10/Polar-Sparsity" class="btn">GitHub Repository</a>
 </div>
