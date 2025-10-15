@@ -1,6 +1,7 @@
 ---
 title: "Polar Sparsity: High-Throughput Batched LLM Inferencing"
 excerpt: "Accelerating large language model (LLM) inference with scalable contextual sparsity, achieving up to 2.2x speedups."
+permalink: /polar-sparsity/
 tags:
   - LLM
   - Inference
