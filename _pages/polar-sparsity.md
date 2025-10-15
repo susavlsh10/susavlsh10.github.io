@@ -17,21 +17,8 @@ tags:
 
   <div class="polar-authors">
   <div class="author">
-  <p class="author-name">Susav Shrestha</p>
-  <p class="author-affiliation">Texas A&M University</p>
-  </div>
-  <div class="author">
-  <p class="author-name">Nikoli Dryden</p>
-  <p class="author-affiliation">Lawrence Livermore National Laboratory</p>
-  </div>
-  <div class="author">
-  <p class="author-name">Brad Settlemyer</p>
-  <p class="author-affiliation">NVIDIA</p>
-  </div>
-  <div class="author">
-  <p class="author-name">Narasimha Reddy</p>
-  <p class="author-affiliation">Texas A&M University</p>
-  </div>
+  <p class="author-name">Susav Shrestha, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy</p>
+  <!-- <p class="author-affiliation">Texas A&M University</p> -->
   </div>
   <!-- === END OF AUTHOR SECTION === -->
   <a href="#resources" class="btn btn--primary">Resources</a>
