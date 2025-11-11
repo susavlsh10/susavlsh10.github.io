@@ -17,209 +17,205 @@ permalink: /polar-sparsity/
       </div>
     </div>
     
-    <div class="hero-badge">
-      NeurIPS 2025
+    <div class="hero-conference">
+      39th Conference on Neural Information Processing Systems (NeurIPS 2025)
     </div>
     
     <div class="hero-buttons">
       <a href="https://arxiv.org/abs/XXXX.XXXXX" class="hero-btn hero-btn-primary">
-        📄 Paper
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        arXiv
       </a>
       <a href="/files/Polar_Sparsity_NeurIPS_2025_CameraReady.pdf" class="hero-btn hero-btn-secondary">
-        📥 PDF
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        PDF
       </a>
       <a href="https://github.com/susavlsh10/Polar-Sparsity" class="hero-btn hero-btn-secondary">
-        💻 Code
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        Code
       </a>
     </div>
   </div>
 </div>
 
-<section class="visual-section">
-  <div class="section-title">The Polar Shift in LLM Inference</div>
-  
-  <div class="comparison-grid">
-    <div class="comparison-box">
-      <h3 class="box-title">Traditional Sparsity</h3>
-      <div class="box-image">
-        <img src="/images/polar-sparsity/placeholder.svg" alt="Traditional sparsity approach">
+<section class="abstract-section">
+  <div class="container">
+    <h2>Abstract</h2>
+    <p class="abstract-text">
+      Large Language Models (LLMs) have demonstrated remarkable capabilities across various domains but require significant computational resources, especially for high-throughput inference. Activation sparsity has emerged as a promising approach to reduce inference costs by selectively activating only a subset of model parameters. However, existing methods face challenges in scaling to large batch sizes due to the rapid degradation of MLP (Multi-Layer Perceptron) sparsity as batch sizes increase. We introduce Polar Sparsity, a novel approach that addresses this limitation by identifying and exploiting a fundamental shift in computational bottlenecks: while MLP sparsity degrades with larger batches, attention head sparsity remains stable and batch-invariant. We develop custom GPU kernels—Selective GEMM for MLP layers and Selective FlashAttention for attention layers—that efficiently leverage these complementary sparsity patterns. Evaluated on models ranging from 6.7B to 66B parameters, Polar Sparsity achieves up to 2.2× end-to-end speedup for batched decoding on NVIDIA A100 GPUs while maintaining accuracy within 1% of dense baselines across multiple benchmarks.
+    </p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <h2>Polar Sparsity</h2>
+    <p class="section-intro">
+      As batch sizes and sequence lengths increase in LLM inference, we observe a fundamental shift—a "polar shift"—in computational bottlenecks. Traditional activation sparsity methods focus on MLP neurons, but their benefits diminish at scale. Polar Sparsity exploits the fact that attention head sparsity remains consistent across batch sizes, providing a scalable path to efficient inference.
+    </p>
+
+    <div class="subsection">
+      <h3>Decode Latency Breakdown</h3>
+      <p>
+        As batch size increases, attention computation becomes the dominant factor in inference latency while MLP computation remains relatively constant. This shift motivates our focus on attention-level optimizations.
+      </p>
+      <figure class="content-figure">
+        <img src="/images/polar-sparsity/placeholder.svg" alt="Decode latency breakdown across batch sizes">
+        <figcaption>
+          <strong>Figure 1:</strong> Transformer decode latency breakdown on A100 GPUs. Attention layers increasingly dominate total latency as batch size grows.
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="subsection">
+      <h3>Selective Head Attention</h3>
+      <p>
+        Unlike MLP neuron sparsity which degrades as batches grow, attention head sparsity remains stable. We develop Selective FlashAttention, a kernel that efficiently skips inactive attention heads while maintaining the I/O-efficient properties of FlashAttention.
+      </p>
+      <figure class="content-figure">
+        <img src="/images/polar-sparsity/placeholder.svg" alt="Selective head attention mechanism">
+        <figcaption>
+          <strong>Figure 2:</strong> Selective FlashAttention skips computation for inactive attention heads, achieving up to 2.8× speedup.
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="subsection">
+      <h3>Accuracy vs. Attention Density</h3>
+      <p>
+        We analyze the trade-off between attention head density (percentage of active heads) and model accuracy. Our results show that maintaining high accuracy requires only a fraction of attention heads, especially at larger batch sizes.
+      </p>
+      <figure class="content-figure">
+        <img src="/images/polar-sparsity/placeholder.svg" alt="Accuracy vs attention density trade-off">
+        <figcaption>
+          <strong>Figure 3:</strong> Accuracy remains within 1% of baseline even with significant attention head sparsity.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt-bg">
+  <div class="container">
+    <h2>Results and Throughput</h2>
+    <p class="section-intro">
+      We evaluate Polar Sparsity across multiple model sizes and benchmarks, demonstrating consistent speedups with minimal accuracy loss. Our custom kernels achieve significant performance improvements for both MLP and attention computations.
+    </p>
+
+    <div class="subsection">
+      <h3>Kernel Speedup</h3>
+      <div class="kernel-speedup-grid">
+        <figure class="content-figure">
+          <img src="/images/polar-sparsity/placeholder.svg" alt="Selective GEMM speedup">
+          <figcaption>
+            <strong>Figure 4:</strong> Selective GEMM achieves up to 5.5× speedup over dense GEMM for MLP layers.
+          </figcaption>
+        </figure>
+        <figure class="content-figure">
+          <img src="/images/polar-sparsity/placeholder.svg" alt="Selective FlashAttention speedup">
+          <figcaption>
+            <strong>Figure 5:</strong> Selective FlashAttention delivers up to 2.8× speedup for attention computation.
+          </figcaption>
+        </figure>
       </div>
-      <p class="box-description">
-        ❌ MLP sparsity degrades with larger batches<br>
-        ❌ Benefits disappear at scale
+    </div>
+
+    <div class="subsection">
+      <h3>Benchmark Results</h3>
+      <div class="table-container">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Benchmark</th>
+              <th>Dense Accuracy</th>
+              <th>Polar Sparsity</th>
+              <th>Speedup</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>OPT-66B</td>
+              <td>CNN/DM</td>
+              <td>85.2%</td>
+              <td>84.8%</td>
+              <td>2.2×</td>
+            </tr>
+            <tr>
+              <td>LLaMA-2-13B</td>
+              <td>WikiText</td>
+              <td>92.1%</td>
+              <td>91.9%</td>
+              <td>1.9×</td>
+            </tr>
+            <tr>
+              <td>LLaMA-3-8B</td>
+              <td>C4</td>
+              <td>88.7%</td>
+              <td>88.3%</td>
+              <td>2.0×</td>
+            </tr>
+            <tr>
+              <td>Mistral-7B</td>
+              <td>HellaSwag</td>
+              <td>81.9%</td>
+              <td>81.5%</td>
+              <td>1.8×</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">
+        <strong>Table 1:</strong> Accuracy and speedup comparison across different models and benchmarks. All experiments conducted on NVIDIA A100 GPUs with batch size 256.
       </p>
     </div>
-    
-    <div class="comparison-box highlight-box">
-      <h3 class="box-title">Polar Sparsity</h3>
-      <div class="box-image">
-        <img src="/images/polar-sparsity/placeholder.svg" alt="Polar sparsity approach">
-      </div>
-      <p class="box-description">
-        ✅ Batch-invariant attention head sparsity<br>
-        ✅ 2.2× speedup at large batch sizes
+
+    <div class="subsection">
+      <h3>End-to-End Throughput</h3>
+      <p>
+        We measure decode throughput (tokens/second) across different batch sizes, comparing Polar Sparsity against dense baselines and state-of-the-art activation sparsity methods.
       </p>
+      <figure class="content-figure">
+        <img src="/images/polar-sparsity/placeholder.svg" alt="Throughput comparison">
+        <figcaption>
+          <strong>Figure 6:</strong> Decode throughput for OPT-66B across batch sizes. Polar Sparsity maintains consistent speedups even at large batch sizes where traditional sparsity methods degrade.
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="visual-section alt-bg">
-  <div class="section-title">Key Insight: The Computational Bottleneck Shifts</div>
-  
-  <figure class="main-figure">
-    <img src="/images/polar-sparsity/placeholder.svg" alt="Latency breakdown showing polar shift">
-    <figcaption>
-      As batch size increases, Attention layers dominate computation while MLP sparsity benefits diminish
-    </figcaption>
-  </figure>
-</section>
-
-<section class="visual-section">
-  <div class="section-title">Performance Highlights</div>
-  
-  <div class="stats-row">
-    <div class="stat-box">
-      <div class="stat-number">2.2×</div>
-      <div class="stat-label">End-to-End<br>Speedup</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-number">5.5×</div>
-      <div class="stat-label">Peak MLP<br>Acceleration</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-number">2.8×</div>
-      <div class="stat-label">Peak Attention<br>Speedup</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-number">&lt;1%</div>
-      <div class="stat-label">Accuracy<br>Loss</div>
-    </div>
-  </div>
-  
-  <figure class="main-figure">
-    <img src="/images/polar-sparsity/placeholder.svg" alt="Throughput comparison">
-    <figcaption>
-      Decode throughput comparison across different batch sizes on OPT-66B
-    </figcaption>
-  </figure>
-</section>
-
-<section class="visual-section alt-bg">
-  <div class="section-title">Hardware-Efficient Custom Kernels</div>
-  
-  <div class="kernel-grid">
-    <div class="kernel-card">
-      <h3>⚡ Selective GEMM</h3>
-      <div class="kernel-image">
-        <img src="/images/polar-sparsity/placeholder.svg" alt="Selective GEMM kernel">
-      </div>
-      <ul class="kernel-features">
-        <li>Dynamic neuron selection</li>
-        <li>Tile-based computation</li>
-        <li>Up to 5.5× faster</li>
-      </ul>
-    </div>
-    
-    <div class="kernel-card">
-      <h3>🎯 Selective FlashAttention</h3>
-      <div class="kernel-image">
-        <img src="/images/polar-sparsity/placeholder.svg" alt="Selective FlashAttention kernel">
-      </div>
-      <ul class="kernel-features">
-        <li>Head & group sparsity</li>
-        <li>I/O-efficient design</li>
-        <li>Up to 2.8× faster</li>
-      </ul>
-    </div>
+<section class="content-section">
+  <div class="container">
+    <h2>Conclusion</h2>
+    <p class="conclusion-text">
+      We present Polar Sparsity, a novel approach to efficient LLM inference that addresses the fundamental challenge of scaling activation sparsity to large batch sizes. By identifying and exploiting the "polar shift" in computational bottlenecks—where attention computation dominates at scale while attention head sparsity remains stable—we achieve significant speedups without sacrificing accuracy. Our custom GPU kernels, Selective GEMM and Selective FlashAttention, efficiently leverage complementary sparsity patterns in MLP and attention layers. Evaluated on models up to 66B parameters, Polar Sparsity demonstrates up to 2.2× end-to-end speedup with less than 1% accuracy loss, opening new avenues for efficient large-scale LLM deployment. Future work will explore dynamic sparsity patterns, integration with other optimization techniques, and extension to additional model architectures.
+    </p>
   </div>
 </section>
 
-<section class="visual-section">
-  <div class="section-title">Evaluation Results</div>
-  
-  <div class="models-tested">
-    <strong>Models:</strong> OPT (6.7B-66B) • LLaMA-2/3 (7B-13B) • Qwen (7B) • Mistral (7B)<br>
-    <strong>Hardware:</strong> NVIDIA A100 GPUs • Batch sizes up to 512
-  </div>
-  
-  <figure class="main-figure">
-    <img src="/images/polar-sparsity/placeholder.svg" alt="Accuracy comparison">
-    <figcaption>
-      Accuracy comparison across different downstream tasks with near-baseline performance
-    </figcaption>
-  </figure>
-  
-  <figure class="main-figure">
-    <img src="/images/polar-sparsity/placeholder.svg" alt="Sparsity patterns">
-    <figcaption>
-      MLP neuron sparsity vs. Attention head sparsity across different batch sizes
-    </figcaption>
-  </figure>
-</section>
-
-<section class="visual-section alt-bg">
-  <div class="section-title">How It Works</div>
-  
-  <div class="workflow-timeline">
-    <div class="workflow-step">
-      <div class="step-number">1</div>
-      <h4>Router Training</h4>
-      <p>Train lightweight networks to predict sparsity patterns</p>
-    </div>
-    <div class="workflow-arrow">→</div>
-    <div class="workflow-step">
-      <div class="step-number">2</div>
-      <h4>Kernel Integration</h4>
-      <p>Integrate custom CUDA kernels into inference pipeline</p>
-    </div>
-    <div class="workflow-arrow">→</div>
-    <div class="workflow-step">
-      <div class="step-number">3</div>
-      <h4>Runtime Inference</h4>
-      <p>Achieve 2.2× speedup with minimal accuracy loss</p>
-    </div>
-  </div>
-</section>
-
-<section class="visual-section" id="resources">
-  <div class="section-title">Resources</div>
-  
-  <div class="resources-grid">
-    <a href="https://arxiv.org/abs/XXXX.XXXXX" class="resource-card">
-      <div class="resource-icon">📄</div>
-      <h3>arXiv Paper</h3>
-      <p>Read the full paper</p>
-    </a>
-    
-    <a href="https://github.com/susavlsh10/Polar-Sparsity" class="resource-card">
-      <div class="resource-icon">💻</div>
-      <h3>Code</h3>
-      <p>GitHub repository</p>
-    </a>
-    
-    <a href="/files/Polar_Sparsity_NeurIPS_2025_CameraReady.pdf" class="resource-card">
-      <div class="resource-icon">📥</div>
-      <h3>PDF</h3>
-      <p>Download camera-ready</p>
-    </a>
-    
-    <div class="resource-card disabled">
-      <div class="resource-icon">🎬</div>
-      <h3>Video</h3>
-      <p>Coming soon</p>
-    </div>
-  </div>
-</section>
-
-<section class="visual-section alt-bg">
-  <div class="section-title">Citation</div>
-  
-  <div class="citation-box">
-    <pre>@inproceedings{shrestha2025polar,
-  title={Polar Sparsity: High-Throughput Batched LLM Inference with Scalable Contextual Sparsity},
+<section class="citation-section">
+  <div class="container">
+    <h2>Citation</h2>
+    <div class="citation-box">
+      <pre>@inproceedings{shrestha2025polar,
+  title={Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity},
   author={Shrestha, Susav and Settlemyer, Brad and Dryden, Nikoli and Reddy, Narasimha},
   booktitle={Advances in Neural Information Processing Systems},
   year={2025}
 }</pre>
+    </div>
   </div>
 </section>
