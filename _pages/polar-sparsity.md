@@ -88,7 +88,7 @@ permalink: /polar-sparsity/
         Unlike MLP neuron sparsity which degrades as batches grow, attention head sparsity remains stable. We develop Selective FlashAttention, a kernel that efficiently skips inactive attention heads while maintaining the I/O-efficient properties of FlashAttention.
       </p>
       <figure class="content-figure">
-        <img src="/images/polar-sparsity/SelectAttention.pdf" alt="Selective head attention mechanism">
+        <img src="/images/polar-sparsity/SelectAttention.png" alt="Selective head attention mechanism">
         <figcaption>
           <strong>Figure 2:</strong> Selective FlashAttention skips computation for inactive attention heads, achieving up to 2.8× speedup.
         </figcaption>
