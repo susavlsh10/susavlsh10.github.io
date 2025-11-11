@@ -18,7 +18,7 @@ permalink: /polar-sparsity/
     </div>
     
     <div class="hero-conference">
-      39th Conference on Neural Information Processing Systems (NeurIPS 2025)
+      <strong style="font-size: 1.1em;">39th Conference on Neural Information Processing Systems (NeurIPS 2025)</strong>
     </div>
     
     <div class="hero-buttons">
@@ -54,7 +54,7 @@ permalink: /polar-sparsity/
   <div class="container">
     <h2>Abstract</h2>
     <p class="abstract-text">
-      Large Language Models (LLMs) have demonstrated remarkable capabilities across various domains but require significant computational resources, especially for high-throughput inference. Activation sparsity has emerged as a promising approach to reduce inference costs by selectively activating only a subset of model parameters. However, existing methods face challenges in scaling to large batch sizes due to the rapid degradation of MLP (Multi-Layer Perceptron) sparsity as batch sizes increase. We introduce Polar Sparsity, a novel approach that addresses this limitation by identifying and exploiting a fundamental shift in computational bottlenecks: while MLP sparsity degrades with larger batches, attention head sparsity remains stable and batch-invariant. We develop custom GPU kernels—Selective GEMM for MLP layers and Selective FlashAttention for attention layers—that efficiently leverage these complementary sparsity patterns. Evaluated on models ranging from 6.7B to 66B parameters, Polar Sparsity achieves up to 2.2× end-to-end speedup for batched decoding on NVIDIA A100 GPUs while maintaining accuracy within 1% of dense baselines across multiple benchmarks.
+      Accelerating large language model (LLM) inference is critical for real-world deployments requiring high throughput and low latency. Contextual sparsity, where each token dynamically activates only a small subset of the model parameters, shows promise but does not scale to large batch sizes due to union of active neurons quickly approaching dense computation. We introduce Polar Sparsity, highlighting a key shift in sparsity importance from MLP to Attention layers as we scale batch size and sequence length. While MLP layers become more compute-efficient under batching, their sparsity vanishes. In contrast, attention becomes increasingly more expensive at scale, while their head sparsity remains stable and batch-invariant. We develop Selective Head Attention with hardware-efficient, sparsity-aware GPU kernels, delivering up to 2.2x end-to-end speedups for models like OPT, LLaMA-2 & 3, Qwen, Mistral across various batch sizes and sequence lengths without compromising accuracy. To our knowledge, this is the first work to demonstrate that contextual sparsity can scale effectively to large batch sizes, delivering substantial inference acceleration with minimal changes, making Polar Sparsity practical for large-scale, high-throughput LLM deployment systems.
     </p>
   </div>
 </section>
@@ -72,7 +72,7 @@ permalink: /polar-sparsity/
         As batch size increases, attention computation becomes the dominant factor in inference latency while MLP computation remains relatively constant. This shift motivates our focus on attention-level optimizations.
       </p>
       <figure class="content-figure">
-        <img src="/images/polar-sparsity/placeholder.svg" alt="Decode latency breakdown across batch sizes">
+        <img src="/images/polar-sparsity/a100_opt66b_decode.png" alt="Decode latency breakdown across batch sizes">
         <figcaption>
           <strong>Figure 1:</strong> Transformer decode latency breakdown on A100 GPUs. Attention layers increasingly dominate total latency as batch size grows.
         </figcaption>
@@ -85,7 +85,7 @@ permalink: /polar-sparsity/
         Unlike MLP neuron sparsity which degrades as batches grow, attention head sparsity remains stable. We develop Selective FlashAttention, a kernel that efficiently skips inactive attention heads while maintaining the I/O-efficient properties of FlashAttention.
       </p>
       <figure class="content-figure">
-        <img src="/images/polar-sparsity/placeholder.svg" alt="Selective head attention mechanism">
+        <img src="/images/polar-sparsity/SelectAttention.pdf" alt="Selective head attention mechanism">
         <figcaption>
           <strong>Figure 2:</strong> Selective FlashAttention skips computation for inactive attention heads, achieving up to 2.8× speedup.
         </figcaption>
@@ -98,7 +98,7 @@ permalink: /polar-sparsity/
         We analyze the trade-off between attention head density (percentage of active heads) and model accuracy. Our results show that maintaining high accuracy requires only a fraction of attention heads, especially at larger batch sizes.
       </p>
       <figure class="content-figure">
-        <img src="/images/polar-sparsity/placeholder.svg" alt="Accuracy vs attention density trade-off">
+        <img src="/images/polar-sparsity/accuracy_density.png" alt="Accuracy vs attention density trade-off">
         <figcaption>
           <strong>Figure 3:</strong> Accuracy remains within 1% of baseline even with significant attention head sparsity.
         </figcaption>
@@ -118,7 +118,7 @@ permalink: /polar-sparsity/
       <h3>Kernel Speedup</h3>
       <div class="kernel-speedup-grid">
         <figure class="content-figure">
-          <img src="/images/polar-sparsity/placeholder.svg" alt="Selective GEMM speedup">
+          <img src="/images/polar-sparsity/gpus_dense_and_sparse_mlp_graph.png" alt="Selective GEMM speedup">
           <figcaption>
             <strong>Figure 4:</strong> Selective GEMM achieves up to 5.5× speedup over dense GEMM for MLP layers.
           </figcaption>
@@ -188,7 +188,7 @@ permalink: /polar-sparsity/
         We measure decode throughput (tokens/second) across different batch sizes, comparing Polar Sparsity against dense baselines and state-of-the-art activation sparsity methods.
       </p>
       <figure class="content-figure">
-        <img src="/images/polar-sparsity/placeholder.svg" alt="Throughput comparison">
+        <img src="/images/polar-sparsity/opt-66b_throughput.png" alt="Throughput comparison">
         <figcaption>
           <strong>Figure 6:</strong> Decode throughput for OPT-66B across batch sizes. Polar Sparsity maintains consistent speedups even at large batch sizes where traditional sparsity methods degrade.
         </figcaption>
@@ -201,7 +201,9 @@ permalink: /polar-sparsity/
   <div class="container">
     <h2>Conclusion</h2>
     <p class="conclusion-text">
-      We present Polar Sparsity, a novel approach to efficient LLM inference that addresses the fundamental challenge of scaling activation sparsity to large batch sizes. By identifying and exploiting the "polar shift" in computational bottlenecks—where attention computation dominates at scale while attention head sparsity remains stable—we achieve significant speedups without sacrificing accuracy. Our custom GPU kernels, Selective GEMM and Selective FlashAttention, efficiently leverage complementary sparsity patterns in MLP and attention layers. Evaluated on models up to 66B parameters, Polar Sparsity demonstrates up to 2.2× end-to-end speedup with less than 1% accuracy loss, opening new avenues for efficient large-scale LLM deployment. Future work will explore dynamic sparsity patterns, integration with other optimization techniques, and extension to additional model architectures.
+      Our work highlights the scalability and effectiveness of contextual sparsity for accelerating batched LLM inference. We introduce Polar Sparsity, a key insight showing that as batch size and sequence length grow, the importance of sparsity transitions from MLP layers, where union activation increases, to Attention layers, where head-level sparsity remains stable and batch-invariant.To exploit this property, we develop Selective Head Attention with sparsity-aware GPU kernels that execute computations only for activated heads and neurons. Together, these optimizations deliver consistent speedups across a wide range of models, batch sizes, and sequence lengths with minimal impact on accuracy. 
+      Our results are competitive with state-of-the-art approaches and delivers up to 2.2x end-to-end speedups in large-scale settings, affirming the practical viability of Polar Sparsity for efficient and scalable LLM serving. This method is a step towards realizing scalable, high-performance, batched LLM inference that meets the growing demands of modern applications.
+
     </p>
   </div>
 </section>
