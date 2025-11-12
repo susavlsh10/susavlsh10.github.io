@@ -18,27 +18,79 @@ redirect_from:
 
 I specialize in building **efficient and scalable machine learning systems** for real-world deployment. My work bridges the gap between algorithm design and system-level efficiency, with a focus on **accelerating large-scale inference** through hardware-aware design, sparsity, and parallelism.
 
-I am a PhD candidate in Computer Engineering at **Texas A&M University**, advised by [Dr. Narasimha Reddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). 
+I am a PhD candidate in Computer Engineering at **Texas A&M University**, advised by [Dr. Narasimha Reddy](https://experts.tamu.edu/expert/narasimha-annapareddy/).
 
 ---
 ### Research Interests
 
-- Efficient and Sparse LLM Inference
-- Hardware Efficient and High-Throughput Distributed Inference at Scale
+<div class="research-interests">
+  <div class="interest-card">
+    <div class="interest-icon">🚀</div>
+    <h4>Efficient & Sparse LLM Inference</h4>
+    <p>Optimizing large language models for high-throughput deployment</p>
+  </div>
+  <div class="interest-card">
+    <div class="interest-icon">⚡</div>
+    <h4>Hardware-Aware Design</h4>
+    <p>Scalable distributed inference systems at scale</p>
+  </div>
+</div>
 
-### Selected Publications
+### Featured Publications
 
-- **Polar Sparsity**: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity
-**Susav Shrestha**, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy. [Paper](https://arxiv.org/abs/2505.14884),[Code](https://github.com/susavlsh10/Polar-Sparsity)  
+<div class="publications-featured">
+  <div class="publication-card featured">
+    <span class="pub-badge">NeurIPS 2025</span>
+    <h4>Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity</h4>
+    <p class="pub-authors"><strong>Susav Shrestha</strong>, Brad Settlemyer, Nikoli Dryden, Narasimha Reddy</p>
+    <div class="pub-links">
+      <a href="https://arxiv.org/abs/2505.14884" class="btn-pub">📄 Paper</a>
+      <a href="https://github.com/susavlsh10/Polar-Sparsity" class="btn-pub">💻 Code</a>
+    </div>
+  </div>
 
-- **ESPN**: Memory-Efficient Multi-vector Information Retrieval  
-**Susav Shrestha**, Narasimha Reddy, Zongwang Li. In Proceedings of ISMM 2024[Paper](https://doi.org/10.1145/3652024.3665515),[Code](https://github.com/susavlsh10/ESPN-v1)
+  <div class="publication-card">
+    <span class="pub-badge">ISMM 2024</span>
+    <h4>ESPN: Memory-Efficient Multi-vector Information Retrieval</h4>
+    <p class="pub-authors"><strong>Susav Shrestha</strong>, Narasimha Reddy, Zongwang Li</p>
+    <div class="pub-links">
+      <a href="https://doi.org/10.1145/3652024.3665515" class="btn-pub">📄 Paper</a>
+      <a href="https://github.com/susavlsh10/ESPN-v1" class="btn-pub">💻 Code</a>
+    </div>
+  </div>
+</div>
 
-### Selected Experience
+### Experience
 
-- Research Intern, NVIDIA, Santa Clara, CA, May - Aug 2025
-- Research Intern, NVIDIA, Austin, TX, May - Aug 2024
-- Research Intern, Samsung Semiconductor, San Jose, CA, May - Aug 2022  
+<div class="experience-timeline">
+  <div class="experience-item">
+    <div class="exp-badge">2025</div>
+    <div class="exp-content">
+      <h4>Research Intern · NVIDIA</h4>
+      <p class="exp-location">Santa Clara, CA · May - Aug 2025</p>
+    </div>
+  </div>
+  <div class="experience-item">
+    <div class="exp-badge">2024</div>
+    <div class="exp-content">
+      <h4>Research Intern · NVIDIA</h4>
+      <p class="exp-location">Austin, TX · May - Aug 2024</p>
+    </div>
+  </div>
+  <div class="experience-item">
+    <div class="exp-badge">2022</div>
+    <div class="exp-content">
+      <h4>Research Intern · Samsung Semiconductor</h4>
+      <p class="exp-location">San Jose, CA · May - Aug 2022</p>
+    </div>
+  </div>
+</div>
 
-### Updates
-- 📄 [Polar Sparsity](https://arxiv.org/abs/2505.14884) accepted at NeurIPS 2025. 
+### Recent Updates
+
+<div class="updates-section">
+  <div class="update-item">
+    <span class="update-date">2025</span>
+    <p>📄 <a href="https://arxiv.org/abs/2505.14884">Polar Sparsity</a> accepted at <strong>NeurIPS 2025</strong></p>
+  </div>
+</div> 
