@@ -9,7 +9,7 @@ permalink: /polar-sparsity/
     <h1 class="hero-title">Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity</h1>
     
     <div class="hero-authors">
-      <a href="https://susavlsh10.github.io/" class="author-link">Susav Shrestha</a><sup>1</sup>, 
+      <a href="https://susavlsh10.github.io/" class="author-link">Susav Shrestha</a><sup>1,2</sup>, 
       <a href="#" class="author-link">Brad Settlemyer</a><sup>2</sup>, 
       <a href="https://ndryden.com/pages/Me" class="author-link">Nikoli Dryden</a><sup>3</sup>, 
       <a href="https://engineering.tamu.edu/electrical/profiles/reddy-narasimha.html" class="author-link">Narasimha Reddy</a><sup>1</sup>
