@@ -1252,7 +1252,7 @@
 }
 
 .abstract-section {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   background: #f9fafb;
   border-bottom: 1px solid #e5e7eb;
   
@@ -1275,7 +1275,7 @@
 }
 
 .content-section {
-  padding: 2.5rem 0;
+  padding: 1rem 0;
   
   &.alt-bg {
     background: #f9fafb;
@@ -1285,7 +1285,7 @@
     font-size: 2rem;
     font-weight: 600;
     color: #1a202c;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     text-align: center;
   }
   
@@ -1299,7 +1299,7 @@
   }
   
   .subsection {
-    margin-top: 2rem;
+    margin-top: 1rem;
     
     h3 {
       font-size: 1.5rem;
