@@ -1403,7 +1403,7 @@
   margin: 1.5rem 0;
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.25rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   border: 1px solid #e5e7eb;
 }
@@ -1411,64 +1411,72 @@
 .results-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   
   thead {
-    background: #f9fafb;
+    background: linear-gradient(180deg, #f9fafb 0%, #f3f4f6 100%);
     
     tr th {
-      padding: 1rem 1rem;
+      padding: 0.6rem 0.75rem;
       text-align: center;
       font-weight: 700;
       color: #1a202c;
       border-bottom: 2px solid #cbd5e0;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
       
       &:first-child {
         text-align: left;
-        padding-left: 1.5rem;
+        padding-left: 1rem;
       }
     }
   }
   
   tbody {
     tr {
-      border-bottom: 1px solid #f3f4f6;
+      border-bottom: 1px solid #f9fafb;
+      transition: background-color 0.15s ease;
       
       &:last-child {
         border-bottom: none;
       }
       
       &:hover {
-        background: #f9fafb;
+        background: #f8fafc;
       }
       
       &.row-separator {
-        border-top: 3px solid #cbd5e0;
+        border-top: 3px solid #94a3b8;
         
         td {
-          padding-top: 1.25rem;
+          padding-top: 0.75rem;
+          padding-bottom: 0.5rem;
         }
       }
       
       td {
-        padding: 1rem 1rem;
+        padding: 0.5rem 0.75rem;
         color: #4a5568;
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        line-height: 1.3;
         
         &:first-child {
           font-weight: 600;
           color: #2d3748;
           text-align: left;
-          padding-left: 1.5rem;
+          padding-left: 1rem;
+          font-size: 0.875rem;
         }
         
         &:last-child {
           font-weight: 700;
           color: #2563eb;
-          font-size: 0.95rem;
+          font-size: 0.875rem;
+          background: #eff6ff;
+          border-left: 2px solid #dbeafe;
         }
       }
     }
@@ -1502,16 +1510,17 @@
   }
   
   .citation-box {
-    background: #1e293b;
+    background: #f3f4f6;
     border-radius: 12px;
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #e5e7eb;
     
     pre {
       background: transparent;
-      color: #e2e8f0;
+      color: #374151;
       padding: 0;
       margin: 0;
       font-size: 0.9rem;

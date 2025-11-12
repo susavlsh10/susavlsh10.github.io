@@ -18,6 +18,28 @@ See more info at https://academicpages.github.io/
 
 ## To run locally (not on GitHub Pages, to serve on your own computer)
 
+### Option 1: Using Docker (Recommended for Mac)
+
+If you're on a Mac (especially Apple Silicon) and having trouble installing Ruby dependencies, use Docker:
+
+1. Install [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop)
+2. Make sure Docker Desktop is running
+3. Run the following command in the repository directory:
+   ```bash
+   ./run-docker.sh
+   ```
+   Or manually with docker compose:
+   ```bash
+   docker compose up --build
+   ```
+4. Open your browser to `http://localhost:4000`
+5. The site will automatically rebuild when you make changes to files
+6. Press `Ctrl+C` to stop the server
+
+**Note:** The first build may take a few minutes as Docker downloads and installs all dependencies.
+
+### Option 2: Native Installation
+
 1. Clone the repository and made updates as detailed above
 1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
 1. Run `bundle clean` to clean up the directory (no need to run `--force`)
