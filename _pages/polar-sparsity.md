@@ -267,12 +267,20 @@ permalink: /polar-sparsity/
       <p>
         We measure decode throughput (tokens/second) across different batch sizes, comparing Polar Sparsity against dense baselines and state-of-the-art activation sparsity methods.
       </p>
-      <figure class="content-figure">
-        <img src="/images/polar-sparsity/opt-66b_throughput.png" alt="Throughput comparison">
-        <figcaption>
-          <strong>Figure 6:</strong> Decode throughput for OPT-66B across batch sizes. Polar Sparsity maintains consistent speedups even at large batch sizes where traditional sparsity methods degrade.
-        </figcaption>
-      </figure>
+      <div class="kernel-speedup-grid">
+        <figure class="content-figure">
+          <img src="/images/polar-sparsity/opt-66b_throughput.png" alt="Throughput comparison for OPT-66B">
+          <figcaption>
+            <strong>Figure 6:</strong> Decode throughput for OPT-66B across batch sizes. Polar Sparsity maintains consistent speedups even at large batch sizes where traditional sparsity methods degrade.
+          </figcaption>
+        </figure>
+        <figure class="content-figure">
+          <img src="/images/polar-sparsity/Llama-2-7b-hf_ws_1_seq_len_3968_attn_topk_0.5.png" alt="Throughput comparison for LLaMA-2 7B">
+          <figcaption>
+            <strong>Figure 7:</strong> Decode throughput for LLaMA-2 7B showing performance scaling with attention sparsity.
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
