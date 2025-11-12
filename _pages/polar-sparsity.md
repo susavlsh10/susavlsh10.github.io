@@ -68,6 +68,8 @@ permalink: /polar-sparsity/
     <p class="section-intro">
       Polar Sparsity refers to the shift in sparsity importance from MLP layers to Attention layers as batch size and sequence length increase.
       Current state-of-the-art sparsity methods primarily focus on model parameter sparsity, where only a subset of model parameters is activated to reduce computation and memory IO. We define head sparsity as the phenomenon where, for a given token, only a subset of attention heads contribute significantly to the output while the remaining heads have negligible effect.
+      
+      
       In large-batch inference, the cost of accessing model parameters is largely amortized, since the entire batch utilizes the same model weights. In contrast, each batch has a unique key-value (KV) cache, making attention layers memory I/O expensive. 
       While contextual sparsity in model parameters diminishes as batch sizes increase, attention head sparsity remains stable and batch invariant. 
       We introduce Selective Head Attention, which activates only the most critical heads for each request, preserving overall sparsity and improving compute and memory efficiency. 
