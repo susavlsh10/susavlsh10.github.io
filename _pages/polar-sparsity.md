@@ -95,7 +95,7 @@ permalink: /polar-sparsity/
       <p>
         We analyze the trade-off between attention head density (percentage of active heads) and model accuracy. Our results show that maintaining high accuracy requires only a fraction of attention heads, especially at larger batch sizes.
       </p>
-      <figure class="content-figure">
+      <figure class="content-figure content-figure-large">
         <img src="/images/polar-sparsity/accuracy_density.png" alt="Accuracy vs attention density trade-off">
         <figcaption>
           <strong>Figure 3:</strong> Accuracy remains within 1% of baseline even with significant attention head sparsity.
@@ -151,166 +151,114 @@ permalink: /polar-sparsity/
           </thead>
           <tbody>
             <tr>
-              <td>OPT 6.7B</td>
-              <td>81.0%</td>
-              <td>27.6%</td>
-              <td>76.3%</td>
-              <td>55.2%</td>
-              <td>65.3%</td>
-              <td>49.9%</td>
-              <td>26.5%</td>
-              <td>65.7%</td>
-              <td>30.5%</td>
-              <td>53.1%</td>
-            </tr>
-            <tr>
-              <td>OPT 6.7B + PS-0.5</td>
-              <td>83.0%</td>
-              <td>28.2%</td>
-              <td>75.5%</td>
-              <td>52.7%</td>
-              <td>63.6%</td>
-              <td>48.8%</td>
-              <td>25.2%</td>
-              <td>64.7%</td>
-              <td>30.0%</td>
-              <td>52.4%</td>
-            </tr>
-            <tr class="row-separator">
               <td>OPT 66B</td>
-              <td>85.0%</td>
-              <td>30.4%</td>
-              <td>78.7%</td>
-              <td>60.3%</td>
-              <td>69.0%</td>
-              <td>55.7%</td>
-              <td>26.3%</td>
-              <td>71.1%</td>
-              <td>36.9%</td>
-              <td>57.0%</td>
+              <td>0.85</td>
+              <td>0.304</td>
+              <td>0.787</td>
+              <td>0.603</td>
+              <td>0.690</td>
+              <td>0.557</td>
+              <td>0.263</td>
+              <td>0.711</td>
+              <td>0.369</td>
+              <td>0.570</td>
             </tr>
             <tr>
               <td>OPT 66B + PS-0.3</td>
-              <td>83.0%</td>
-              <td>29.6%</td>
-              <td>76.9%</td>
-              <td>59.2%</td>
-              <td>67.7%</td>
-              <td>54.6%</td>
-              <td>26.4%</td>
-              <td>69.3%</td>
-              <td>36.1%</td>
-              <td>56.0%</td>
+              <td>0.83</td>
+              <td>0.296</td>
+              <td>0.769</td>
+              <td>0.592</td>
+              <td>0.677</td>
+              <td>0.546</td>
+              <td>0.264</td>
+              <td>0.693</td>
+              <td>0.361</td>
+              <td>0.560</td>
             </tr>
             <tr class="row-separator">
               <td>LLaMA 2 7B</td>
-              <td>87.0%</td>
-              <td>31.4%</td>
-              <td>78.1%</td>
-              <td>62.8%</td>
-              <td>69.0%</td>
-              <td>57.2%</td>
-              <td>41.8%</td>
-              <td>76.3%</td>
-              <td>43.3%</td>
-              <td>60.8%</td>
+              <td>0.87</td>
+              <td>0.314</td>
+              <td>0.781</td>
+              <td>0.628</td>
+              <td>0.690</td>
+              <td>0.572</td>
+              <td>0.418</td>
+              <td>0.763</td>
+              <td>0.433</td>
+              <td>0.608</td>
             </tr>
             <tr>
               <td>LLaMA 2 7B + PS-0.5</td>
-              <td>89.0%</td>
-              <td>31.2%</td>
-              <td>77.9%</td>
-              <td>55.2%</td>
-              <td>68.7%</td>
-              <td>56.8%</td>
-              <td>35.6%</td>
-              <td>76.2%</td>
-              <td>43.9%</td>
-              <td>59.4%</td>
-            </tr>
-            <tr class="row-separator">
-              <td>LLaMA 2 13B</td>
-              <td>91.0%</td>
-              <td>35.0%</td>
-              <td>79.1%</td>
-              <td>65.3%</td>
-              <td>72.2%</td>
-              <td>60.0%</td>
-              <td>52.1%</td>
-              <td>79.4%</td>
-              <td>48.5%</td>
-              <td>64.7%</td>
-            </tr>
-            <tr>
-              <td>LLaMA 2 13B + PS-0.5</td>
-              <td>92.0%</td>
-              <td>35.2%</td>
-              <td>79.0%</td>
-              <td>57.8%</td>
-              <td>72.8%</td>
-              <td>60.0%</td>
-              <td>47.3%</td>
-              <td>78.3%</td>
-              <td>47.3%</td>
-              <td>63.3%</td>
+              <td>0.89</td>
+              <td>0.312</td>
+              <td>0.779</td>
+              <td>0.552</td>
+              <td>0.687</td>
+              <td>0.568</td>
+              <td>0.356</td>
+              <td>0.762</td>
+              <td>0.439</td>
+              <td>0.594</td>
             </tr>
             <tr class="row-separator">
               <td>LLaMA 3.1 70B</td>
-              <td>92.0%</td>
-              <td>37.0%</td>
-              <td>83.1%</td>
-              <td>69.7%</td>
-              <td>79.9%</td>
-              <td>66.5%</td>
-              <td>75.3%</td>
-              <td>87.2%</td>
-              <td>60.6%</td>
-              <td>72.4%</td>
+              <td>0.92</td>
+              <td>0.370</td>
+              <td>0.831</td>
+              <td>0.697</td>
+              <td>0.799</td>
+              <td>0.665</td>
+              <td>0.753</td>
+              <td>0.872</td>
+              <td>0.606</td>
+              <td>0.724</td>
             </tr>
             <tr>
               <td>LLaMA 3.1 70B + PS-0.625</td>
-              <td>91.0%</td>
-              <td>34.0%</td>
-              <td>82.3%</td>
-              <td>72.9%</td>
-              <td>79.3%</td>
-              <td>65.0%</td>
-              <td>73.2%</td>
-              <td>85.3%</td>
-              <td>59.0%</td>
-              <td>71.2%</td>
+              <td>0.91</td>
+              <td>0.340</td>
+              <td>0.823</td>
+              <td>0.729</td>
+              <td>0.793</td>
+              <td>0.650</td>
+              <td>0.732</td>
+              <td>0.853</td>
+              <td>0.590</td>
+              <td>0.712</td>
             </tr>
             <tr class="row-separator">
               <td>Mistral 7B</td>
-              <td>92.0%</td>
-              <td>33.2%</td>
-              <td>80.3%</td>
-              <td>68.6%</td>
-              <td>73.8%</td>
-              <td>60.9%</td>
-              <td>59.1%</td>
-              <td>79.6%</td>
-              <td>48.9%</td>
-              <td>66.3%</td>
+              <td>0.92</td>
+              <td>0.332</td>
+              <td>0.803</td>
+              <td>0.686</td>
+              <td>0.738</td>
+              <td>0.609</td>
+              <td>0.591</td>
+              <td>0.796</td>
+              <td>0.489</td>
+              <td>0.663</td>
             </tr>
             <tr>
               <td>Mistral 7B + PS-0.5</td>
-              <td>92.0%</td>
-              <td>34.0%</td>
-              <td>80.1%</td>
-              <td>67.1%</td>
-              <td>73.6%</td>
-              <td>60.8%</td>
-              <td>56.2%</td>
-              <td>79.3%</td>
-              <td>48.3%</td>
-              <td>65.7%</td>
+              <td>0.92</td>
+              <td>0.340</td>
+              <td>0.801</td>
+              <td>0.671</td>
+              <td>0.736</td>
+              <td>0.608</td>
+              <td>0.562</td>
+              <td>0.793</td>
+              <td>0.483</td>
+              <td>0.657</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p class="table-note">
-        <strong>Table 1:</strong> Zero-shot evaluation at critical thresholds. Polar Sparsity (PS) is competitive with the dense baseline with average accuracy within 1%. COPA = Choice of Plausible Alternatives, OBQA = OpenBookQA, PIQA = Physical IQA, RTE = Recognizing Textual Entailment, WG = Winogrande, HS = HellaSwag, MMLU = Massive Multitask Language Understanding, ARC-E = AI2 Reasoning Challenge Easy, ARC-C = AI2 Reasoning Challenge Challenge.
+        <strong>Table 1:</strong> LLM zero-shot evaluation at critical thresholds. Polar Sparsity (PS) is competitive with the dense baseline with average accuracy within 1%.
       </p>
     </div>
 
