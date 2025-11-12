@@ -136,52 +136,186 @@ permalink: /polar-sparsity/
     </div>
 
     <div class="subsection">
-      <h3>Benchmark Results</h3>
+      <h3>Zero-Shot Benchmark Results</h3>
       <div class="table-container">
         <table class="results-table">
           <thead>
             <tr>
               <th>Model</th>
-              <th>Benchmark</th>
-              <th>Dense Accuracy</th>
-              <th>Polar Sparsity</th>
-              <th>Speedup</th>
+              <th>COPA</th>
+              <th>OBQA</th>
+              <th>PIQA</th>
+              <th>RTE</th>
+              <th>WG</th>
+              <th>HS</th>
+              <th>MMLU</th>
+              <th>ARC-E</th>
+              <th>ARC-C</th>
+              <th>Average</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>OPT-66B</td>
-              <td>CNN/DM</td>
-              <td>85.2%</td>
-              <td>84.8%</td>
-              <td>2.2×</td>
+              <td>OPT 6.7B</td>
+              <td>81.0%</td>
+              <td>27.6%</td>
+              <td>76.3%</td>
+              <td>55.2%</td>
+              <td>65.3%</td>
+              <td>49.9%</td>
+              <td>26.5%</td>
+              <td>65.7%</td>
+              <td>30.5%</td>
+              <td>53.1%</td>
             </tr>
             <tr>
-              <td>LLaMA-2-13B</td>
-              <td>WikiText</td>
-              <td>92.1%</td>
-              <td>91.9%</td>
-              <td>1.9×</td>
+              <td>OPT 6.7B + PS-0.5</td>
+              <td>83.0%</td>
+              <td>28.2%</td>
+              <td>75.5%</td>
+              <td>52.7%</td>
+              <td>63.6%</td>
+              <td>48.8%</td>
+              <td>25.2%</td>
+              <td>64.7%</td>
+              <td>30.0%</td>
+              <td>52.4%</td>
+            </tr>
+            <tr class="row-separator">
+              <td>OPT 66B</td>
+              <td>85.0%</td>
+              <td>30.4%</td>
+              <td>78.7%</td>
+              <td>60.3%</td>
+              <td>69.0%</td>
+              <td>55.7%</td>
+              <td>26.3%</td>
+              <td>71.1%</td>
+              <td>36.9%</td>
+              <td>57.0%</td>
             </tr>
             <tr>
-              <td>LLaMA-3-8B</td>
-              <td>C4</td>
-              <td>88.7%</td>
-              <td>88.3%</td>
-              <td>2.0×</td>
+              <td>OPT 66B + PS-0.3</td>
+              <td>83.0%</td>
+              <td>29.6%</td>
+              <td>76.9%</td>
+              <td>59.2%</td>
+              <td>67.7%</td>
+              <td>54.6%</td>
+              <td>26.4%</td>
+              <td>69.3%</td>
+              <td>36.1%</td>
+              <td>56.0%</td>
+            </tr>
+            <tr class="row-separator">
+              <td>LLaMA 2 7B</td>
+              <td>87.0%</td>
+              <td>31.4%</td>
+              <td>78.1%</td>
+              <td>62.8%</td>
+              <td>69.0%</td>
+              <td>57.2%</td>
+              <td>41.8%</td>
+              <td>76.3%</td>
+              <td>43.3%</td>
+              <td>60.8%</td>
             </tr>
             <tr>
-              <td>Mistral-7B</td>
-              <td>HellaSwag</td>
-              <td>81.9%</td>
-              <td>81.5%</td>
-              <td>1.8×</td>
+              <td>LLaMA 2 7B + PS-0.5</td>
+              <td>89.0%</td>
+              <td>31.2%</td>
+              <td>77.9%</td>
+              <td>55.2%</td>
+              <td>68.7%</td>
+              <td>56.8%</td>
+              <td>35.6%</td>
+              <td>76.2%</td>
+              <td>43.9%</td>
+              <td>59.4%</td>
+            </tr>
+            <tr class="row-separator">
+              <td>LLaMA 2 13B</td>
+              <td>91.0%</td>
+              <td>35.0%</td>
+              <td>79.1%</td>
+              <td>65.3%</td>
+              <td>72.2%</td>
+              <td>60.0%</td>
+              <td>52.1%</td>
+              <td>79.4%</td>
+              <td>48.5%</td>
+              <td>64.7%</td>
+            </tr>
+            <tr>
+              <td>LLaMA 2 13B + PS-0.5</td>
+              <td>92.0%</td>
+              <td>35.2%</td>
+              <td>79.0%</td>
+              <td>57.8%</td>
+              <td>72.8%</td>
+              <td>60.0%</td>
+              <td>47.3%</td>
+              <td>78.3%</td>
+              <td>47.3%</td>
+              <td>63.3%</td>
+            </tr>
+            <tr class="row-separator">
+              <td>LLaMA 3.1 70B</td>
+              <td>92.0%</td>
+              <td>37.0%</td>
+              <td>83.1%</td>
+              <td>69.7%</td>
+              <td>79.9%</td>
+              <td>66.5%</td>
+              <td>75.3%</td>
+              <td>87.2%</td>
+              <td>60.6%</td>
+              <td>72.4%</td>
+            </tr>
+            <tr>
+              <td>LLaMA 3.1 70B + PS-0.625</td>
+              <td>91.0%</td>
+              <td>34.0%</td>
+              <td>82.3%</td>
+              <td>72.9%</td>
+              <td>79.3%</td>
+              <td>65.0%</td>
+              <td>73.2%</td>
+              <td>85.3%</td>
+              <td>59.0%</td>
+              <td>71.2%</td>
+            </tr>
+            <tr class="row-separator">
+              <td>Mistral 7B</td>
+              <td>92.0%</td>
+              <td>33.2%</td>
+              <td>80.3%</td>
+              <td>68.6%</td>
+              <td>73.8%</td>
+              <td>60.9%</td>
+              <td>59.1%</td>
+              <td>79.6%</td>
+              <td>48.9%</td>
+              <td>66.3%</td>
+            </tr>
+            <tr>
+              <td>Mistral 7B + PS-0.5</td>
+              <td>92.0%</td>
+              <td>34.0%</td>
+              <td>80.1%</td>
+              <td>67.1%</td>
+              <td>73.6%</td>
+              <td>60.8%</td>
+              <td>56.2%</td>
+              <td>79.3%</td>
+              <td>48.3%</td>
+              <td>65.7%</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p class="table-note">
-        <strong>Table 1:</strong> Accuracy and speedup comparison across different models and benchmarks. All experiments conducted on NVIDIA A100 GPUs with batch size 256.
+        <strong>Table 1:</strong> Zero-shot evaluation at critical thresholds. Polar Sparsity (PS) is competitive with the dense baseline with average accuracy within 1%. COPA = Choice of Plausible Alternatives, OBQA = OpenBookQA, PIQA = Physical IQA, RTE = Recognizing Textual Entailment, WG = Winogrande, HS = HellaSwag, MMLU = Massive Multitask Language Understanding, ARC-E = AI2 Reasoning Challenge Easy, ARC-C = AI2 Reasoning Challenge Challenge.
       </p>
     </div>
 
