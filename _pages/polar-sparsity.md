@@ -70,29 +70,24 @@ permalink: /polar-sparsity/
     </p>
 
     <div class="subsection">
-      <h3>Decode Latency Breakdown</h3>
+      <h3>Decode Latency Breakdown and Selective Head Attention</h3>
       <p>
-        As batch size increases, attention computation becomes the dominant factor in inference latency while MLP computation remains relatively constant. This shift motivates our focus on attention-level optimizations.
+        As batch size increases, attention computation becomes the dominant factor in inference latency while MLP computation remains relatively constant. This shift motivates our focus on attention-level optimizations. Unlike MLP neuron sparsity which degrades as batches grow, attention head sparsity remains stable. We develop Selective FlashAttention, a kernel that efficiently skips inactive attention heads while maintaining the I/O-efficient properties of FlashAttention.
       </p>
-      <figure class="content-figure">
-        <img src="/images/polar-sparsity/a100_opt66b_decode.png" alt="Decode latency breakdown across batch sizes">
-        <figcaption>
-          <strong>Figure 1:</strong> Transformer decode latency breakdown on A100 GPUs. Attention layers increasingly dominate total latency as batch size grows.
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="subsection">
-      <h3>Selective Head Attention</h3>
-      <p>
-        Unlike MLP neuron sparsity which degrades as batches grow, attention head sparsity remains stable. We develop Selective FlashAttention, a kernel that efficiently skips inactive attention heads while maintaining the I/O-efficient properties of FlashAttention.
-      </p>
-      <figure class="content-figure">
-        <img src="/images/polar-sparsity/SelectAttention.png" alt="Selective head attention mechanism">
-        <figcaption>
-          <strong>Figure 2:</strong> Selective FlashAttention skips computation for inactive attention heads, achieving up to 2.8× speedup.
-        </figcaption>
-      </figure>
+      <div class="kernel-speedup-grid">
+        <figure class="content-figure">
+          <img src="/images/polar-sparsity/a100_opt66b_decode.png" alt="Decode latency breakdown across batch sizes">
+          <figcaption>
+            <strong>Figure 1:</strong> Transformer decode latency breakdown on A100 GPUs. Attention layers increasingly dominate total latency as batch size grows.
+          </figcaption>
+        </figure>
+        <figure class="content-figure">
+          <img src="/images/polar-sparsity/SelectAttention.png" alt="Selective head attention mechanism">
+          <figcaption>
+            <strong>Figure 2:</strong> Selective FlashAttention skips computation for inactive attention heads, achieving up to 2.8× speedup.
+          </figcaption>
+        </figure>
+      </div>
     </div>
 
     <div class="subsection">
