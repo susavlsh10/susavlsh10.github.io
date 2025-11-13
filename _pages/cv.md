@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,109 +8,253 @@ redirect_from:
 ---
 
 <head>
-  <meta name="description" content="This is a personal website of Susav Shrestha. This page consists of his resume or CV.">
+  <meta name="description" content="Curriculum Vitae of Susav Shrestha - PhD candidate specializing in efficient machine learning systems and inference optimization.">
 </head>
 
-{% include base_path %}
-<!-- [Download Resume](/files/susav_resume_2025.pdf){: .btn .btn--success}   -->
+<div class="cv-modern-page">
 
-<p>
-  <a href="/files/susav_resume.pdf" class="btn btn--download">
-    <i class="fas fa-fw fa-download" aria-hidden="true"></i> Download Resume
-  </a>
-</p>
+  <!-- Education Section -->
+  <section class="cv-section">
+    <div class="cv-section-header">
+      <h2 class="cv-section-title">
+        <span class="section-icon">🎓</span>
+        Education
+      </h2>
+      <a href="/files/susav_resume.pdf" class="btn-resume-small">
+        <span>💾</span>
+      </a>
+    </div>
+    
+    <div class="cv-card">
+      <div class="cv-card-header">
+        <div class="cv-institution">
+          <h3>Texas A&M University</h3>
+          <span class="cv-location">📍 College Station, TX</span>
+        </div>
+        <span class="cv-date">Aug 2021 - Est. May 2025</span>
+      </div>
+      <div class="cv-card-body">
+        <p class="cv-degree"><strong>Doctor of Philosophy in Computer Engineering</strong></p>
+        <p class="cv-thesis"><em>Thesis:</em> Hardware Efficient ML System Design in Knowledge Retrieval</p>
+        <p class="cv-advisor"><em>Advisor:</em> Dr. Narasimha Annapareddy Reddy</p>
+      </div>
+    </div>
 
-Education
-======
+    <div class="cv-card">
+      <div class="cv-card-header">
+        <div class="cv-institution">
+          <h3>University of Texas Arlington</h3>
+          <span class="cv-location">📍 Arlington, TX</span>
+        </div>
+        <span class="cv-date">Aug 2017 - May 2021</span>
+      </div>
+      <div class="cv-card-body">
+        <p class="cv-degree"><strong>Bachelor of Science in Electrical Engineering with Honors</strong></p>
+        <p class="cv-minor">Minor in Computer Science</p>
+        <p class="cv-thesis"><em>Honors Thesis:</em> A novel remote sensing system for in-situ measurement of subsurface soil properties</p>
+        <div class="cv-achievements">
+          <span class="achievement-badge">Dean's List 2018-21</span>
+          <span class="achievement-badge">Innovation Day Award 2021</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-**Texas A&M Unviersity**  
-&nbsp; **Doctor of Philosophy in Computer Engineering**  
-&nbsp; College Station, TX, Aug 2021 - Est. 2025  
-&nbsp; Thesis: Hardware Efficient ML System Design in Knowledge Retrieval  
+  <!-- Experience Section -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">
+      <span class="section-icon">💼</span>
+      Professional Experience
+    </h2>
 
-**University of Texas Arlington**  
-&nbsp; **Bachelor of Science in Electrical Engineering with Honors**  
-&nbsp; Minor in Computer Science  
-&nbsp; Arlington, TX, Aug 2017 - May 2021  
-&nbsp; Honors Thesis: A novel remote sensing system for in-situ measurement of subsurface soil properties  
+    <div class="cv-card highlight">
+      <div class="cv-card-header">
+        <div class="cv-institution">
+          <h3>NVIDIA</h3>
+          <span class="cv-role">Research Intern</span>
+        </div>
+        <span class="cv-date">May 2025 - Aug 2025</span>
+      </div>
+      <div class="cv-card-body">
+        <p class="cv-location-detail">📍 Santa Clara, CA</p>
+        <ul class="cv-highlights">
+          <li>Upcoming research internship focused on advanced ML systems optimization</li>
+        </ul>
+      </div>
+    </div>
 
-Work Experience
-======
+    <div class="cv-card highlight">
+      <div class="cv-card-header">
+        <div class="cv-institution">
+          <h3>NVIDIA</h3>
+          <span class="cv-role">Research Intern</span>
+        </div>
+        <span class="cv-date">May 2024 - Aug 2024</span>
+      </div>
+      <div class="cv-card-body">
+        <p class="cv-location-detail">📍 Austin, TX</p>
+        <ul class="cv-highlights">
+          <li>Led research to accelerate LLM inference via activation and contextual sparsity</li>
+          <li>Built sparsely activated OPT and LLaMA models by training activation routers for MLP and Attention layers</li>
+          <li>Developed custom sparse GPU kernels achieving <strong>1.5–3× speedup</strong> in MLP layers and up to <strong>2.5×</strong> in Attention</li>
+          <li>Delivered end-to-end decoding speedups up to <strong>2.2×</strong> across diverse batch sizes and sequence lengths</li>
+        </ul>
+      </div>
+    </div>
 
-**NVIDIA**  
-*Research Intern*  
-&nbsp; Austin, TX, May 2024 – Aug 2024
-- Led research to accelerate LLM inference via activation and contextual sparsity.  
-- Built sparsely activated OPT and LLaMA models by training activation routers for MLP and Attention layers.  
-- Developed custom sparse GPU kernels achieving 1.5–3× speedup in MLP layers and up to 2.5× in Attention.  
-- Delivered end-to-end decoding speedups up to 2.2× across diverse batch sizes and sequence lengths.  
+    <div class="cv-card">
+      <div class="cv-card-header">
+        <div class="cv-institution">
+          <h3>Samsung Semiconductor Inc.</h3>
+          <span class="cv-role">Research Intern</span>
+        </div>
+        <span class="cv-date">May 2022 - Aug 2022</span>
+      </div>
+      <div class="cv-card-body">
+        <p class="cv-location-detail">📍 San Jose, CA</p>
+        <ul class="cv-highlights">
+          <li>Reduced CPU workload by <strong>4×</strong> and accelerated neural inference by <strong>64%</strong> through data pipeline and model execution optimization</li>
+          <li>Filed <strong>2 patent applications</strong> for efficient neural network deployment on edge devices</li>
+        </ul>
+      </div>
+    </div>
 
-**Samsung Semiconductor Inc.**  
-*Research Intern*  
-&nbsp; San Jose, CA, May 2022 - Aug 2022  
-- Reduced CPU workload by 4x and accelerated neural inference by 64% by optimizing data pipeline and model execution.  
-- Filed 2 patent applications for efficient neural network deployment on edge devices.  
+    <div class="cv-card">
+      <div class="cv-card-header">
+        <div class="cv-institution">
+          <h3>Texas A&M University</h3>
+          <span class="cv-role">Graduate Research Assistant</span>
+        </div>
+        <span class="cv-date">Aug 2021 - Present</span>
+      </div>
+      <div class="cv-card-body">
+        <p class="cv-location-detail">📍 College Station, TX</p>
+        <ul class="cv-highlights">
+          <li>Led a project that resulted in a <strong>23% speedup</strong> in embedding processing for large-scale information retrieval</li>
+          <li>Developed scalable multi-vector retrieval systems for large language models</li>
+          <li>Published research at top-tier venues including NeurIPS and ISMM</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-**Texas A&M University**  
-*Graduate Research Assistant*  
-&nbsp; College Station, TX, Aug 2021 - Est. 2025  
-- Led a project that resulted in a 23% speedup in embedding processing for large-scale information retrieval.  
-- Developed scalable multi-vector retrieval systems for large language models.  
+  <!-- Patents Section -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">
+      <span class="section-icon">🔬</span>
+      Patents
+    </h2>
+    
+    <div class="cv-card compact">
+      <div class="cv-card-body">
+        <p class="cv-patent-title"><strong>System and Method for Embeddings Retrieval</strong></p>
+        <p class="cv-patent-info">US Patent Application <em>US20240330193A1</em> • Samsung Electronics Co., Ltd.</p>
+        <a href="https://patents.google.com/patent/US20240330193A1/en" class="cv-link">View Patent →</a>
+      </div>
+    </div>
 
-**University of Texas Arlington**  
-&nbsp; **Undergraduate Research and Teaching Assistant**  
-&nbsp; Arlington, TX, Aug 2019 - May 2021  
+    <div class="cv-card compact">
+      <div class="cv-card-body">
+        <p class="cv-patent-title"><strong>System and Method for Processing Embeddings</strong></p>
+        <p class="cv-patent-info">US Patent Application <em>US20240330290A1</em> • Samsung Electronics Co., Ltd.</p>
+        <a href="https://patents.google.com/patent/US20240330290A1/en" class="cv-link">View Patent →</a>
+      </div>
+    </div>
+  </section>
 
-*  Developed signal processing algorithms to measure dynamic soil properties using a Radar system, simulated, designed, and fabricated electromagnetic sensors.  
-* Teaching assistant for EE2347, Mathematical Foundation of Electrical Engineering. Responsibilities: instructor for lab; taught sophomores algorithms and introduction to python, graded assignments.  
-* Teaching assistant for EE3407, Fundamentals of Electromagnetics. Responsibilites: conducted study sessions and exam reviews. Assisted in redesigning lab experiments with integration of new simulation tools like Ansys HFSS.  
+  <!-- Skills Section -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">
+      <span class="section-icon">⚡</span>
+      Technical Skills
+    </h2>
+    
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h4 class="skill-category-title">Systems & Performance</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">CUDA</span>
+          <span class="skill-tag">C/C++</span>
+          <span class="skill-tag">Parallel Computing</span>
+          <span class="skill-tag">GPU Optimization</span>
+          <span class="skill-tag">OpenMP</span>
+          <span class="skill-tag">MPI</span>
+        </div>
+      </div>
 
-**University of Texas Arlington**  
-&nbsp; **Academic Tutor, Supplimental Instructor and Mentor**  
-&nbsp; Arlington, TX, Aug 2018 - May 2021  
-* 1 on 1 tutoring for UTSI. Academic tutor for Calculus I & II, Physcis I & II, Chemistry.
-* Supplimental Instructor (SI Leader) for UTSI. SI leader for Calculus III, Differential Equation & Linear Algebra. Responsibilites: conducted biweekly study sessions, helped students learn course material and exam reviews.
-* Supplimental Instructor Mentor for UTSI. Responsibilities: Managed and mentored 5-6 SI leaders per semester. Conducted training for SI leaders, hosted weekly mentoring sessions.
+      <div class="skill-category">
+        <h4 class="skill-category-title">Machine Learning</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">LLM Inference</span>
+          <span class="skill-tag">Model Optimization</span>
+          <span class="skill-tag">Scikit-learn</span>
+        </div>
+      </div>
 
-Publications
-======
+      <div class="skill-category">
+        <h4 class="skill-category-title">Development & Tools</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Azure</span>
+        </div>
+      </div>
 
-<!-- * **Shrestha, S.**, Annapareddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval. -->
+      <div class="skill-category">
+        <h4 class="skill-category-title">Specialized</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Information Retrieval</span>
+          <span class="skill-tag">Distributed Systems</span>
+          <span class="skill-tag">HPC</span>
+          <span class="skill-tag">Sparsity</span>
+          <span class="skill-tag">Memory Systems</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-* **Shrestha, S.**, Settlemyer, B., Dryden, N., & Reddy, N. (2025). Polar Sparsity: High Throughput Batched LLM Inferencing with Scalable Contextual Sparsity. *arXiv preprint*. [https://arxiv.org/abs/2505.14884](https://arxiv.org/abs/2505.14884)
+  <!-- Honors Section -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">
+      <span class="section-icon">🏆</span>
+      Honors & Awards
+    </h2>
+    
+    <div class="honors-grid">
+      <div class="honor-item">
+        <span class="honor-icon">🎖️</span>
+        <div class="honor-content">
+          <strong>Innovation Day Award</strong>
+          <span class="honor-year">2021</span>
+        </div>
+      </div>
+      <div class="honor-item">
+        <span class="honor-icon">📚</span>
+        <div class="honor-content">
+          <strong>Dean's List</strong>
+          <span class="honor-year">2018-2021</span>
+        </div>
+      </div>
+      <div class="honor-item">
+        <span class="honor-icon">⭐</span>
+        <div class="honor-content">
+          <strong>Academic Excellence Award</strong>
+          <span class="honor-year">2016</span>
+        </div>
+      </div>
+      <div class="honor-item">
+        <span class="honor-icon">🌟</span>
+        <div class="honor-content">
+          <strong>Cambridge Learners Award</strong>
+          <span class="honor-year">2015</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-* **Shrestha, S.**, Reddy, N., & Li, Z. (2024). ESPN: Memory Efficient Multi-Vector Information Retrieval. In *Proceedings of the ACM SIGPLAN International Symposium on Memory Management (ISMM 2024)*. [https://doi.org/10.1145/3652024.3665515](https://doi.org/10.1145/3652024.3665515)
-
-* **Shrestha, S.**, Gautam, A., & Reddy, N. (2025). Storage Access Optimization for Efficient GPU‑Centric Information Retrieval. *The Journal of Supercomputing*. [https://link.springer.com/article/10.1007/s11227-025-07118-9](https://link.springer.com/article/10.1007/s11227-025-07118-9)
-
-* Gautam, A., **Shrestha, S.**, & Reddy, N. (2025). Token-Driven GammaTune: Adaptive Calibration for Enhanced Speculative Decoding. *arXiv preprint*. [https://arxiv.org/abs/2504.00030](https://arxiv.org/abs/2504.00030)  
-  _*Equal contribution_
-
-Patents
-======
-
-**System and Method for Embeddings Retrieval**  
-*US20240330193A1* — Samsung Electronics Co., Ltd.  
-[Link](https://patents.google.com/patent/US20240330193A1/en)
-
-**System and Method for Processing Embeddings**  
-*US20240330290A1* — Samsung Electronics Co., Ltd.  
-[Link](https://patents.google.com/patent/US20240330290A1/en)
-
-
-Honors
-======
-* Cambridge Learners Award 2015
-* Academic Excellence Award 2016
-* Dean’s List 2018-21
-* Innovation Day Award 2021
-
-
-Skills
-======
-
-**Relevant Coursework**: Advance Computer Architecture, Parallel Computing, Distributed Processing, Deep Learning,Machine Learning, NLP, Information Retrieval, Memory & Storage Systems, Operating Systems, Advanced Algorithms.  
-**Technical**: C/C++, Python, Java, CUDA, MATLAB, OpenCL, OpenMP, Pthreads, MPI, Pytorch, Scikit-learn, gRPC, Hadoop, Azure, AWS, Spark, Verilog, VHDL, Vitis/Vivado HLS, Object Oriented Programming (OOP), GIT, Linux.
-
-
-
+</div>

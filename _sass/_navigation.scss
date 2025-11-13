@@ -175,17 +175,20 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
+  background: transparent;
 
   a {
     display: block;
-    margin: 0 1rem;
-    padding: 0.5rem 0;
-    color: $masthead-link-color;
+    margin: 0 1.25rem;
+    padding: 0.6rem 0;
+    color: #475569;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      color: #0ea5e9;
     }
   }
 
@@ -196,9 +199,17 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: $primary-color;
+    background: linear-gradient(135deg, #1e293b, #334155);
     color: #fff;
     cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(30, 41, 59, 0.2);
+    
+    &:hover {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      box-shadow: 0 4px 12px rgba(30, 41, 59, 0.3);
+    }
   }
 
   .visible-links {
@@ -209,10 +220,16 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: bold;
+        font-weight: 700;
+        font-size: 1.1em;
 
         a {
           margin-left: 0;
+          color: #1e293b;
+          
+          &:hover {
+            color: #38bdf8;
+          }
         }
       }
 
@@ -231,20 +248,21 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        height: 4px;
-        background: mix(#fff, $primary-color, 50%);
+        height: 3px;
+        background: linear-gradient(90deg, #1e293b, #38bdf8);
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
         -webkit-transform: scaleX(0);
             -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
+                transform: scaleX(0);
+        border-radius: 3px;
       }
 
       &:hover:before {
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
+                transform: scaleX(1);
       }
     }
   }

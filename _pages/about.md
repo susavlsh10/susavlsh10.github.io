@@ -15,10 +15,11 @@ redirect_from:
 </head>
 
 <!-- {% include toc %} -->
+I am a **PhD candidate in Computer Engineering** at Texas A&M University, advised by [Dr. Narasimha Reddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). My work bridges the gap between algorithm design and system-level efficiency, with a focus on **accelerating large-scale inference**.
 
-I specialize in building **efficient and scalable machine learning systems** for real-world deployment. My work bridges the gap between algorithm design and system-level efficiency, with a focus on **accelerating large-scale inference** through hardware-aware design, sparsity, and parallelism.
+<!-- I specialize in building **efficient and scalable machine learning systems** for real-world deployment.  -->
 
-I am a PhD candidate in Computer Engineering at **Texas A&M University**, advised by [Dr. Narasimha Reddy](https://experts.tamu.edu/expert/narasimha-annapareddy/).
+My work focuses on **making machine learning systems more efficient and accessible** through sparsity, hardware-aware design, and distributed inference.
 
 ---
 ### Research Interests
@@ -31,8 +32,8 @@ I am a PhD candidate in Computer Engineering at **Texas A&M University**, advise
   </div>
   <div class="interest-card">
     <div class="interest-icon">⚡</div>
-    <h4>Hardware-Aware Design</h4>
-    <p>Scalable distributed inference systems at scale</p>
+    <h4>HPC and Distributed Systems</h4>
+    <p>Building scalable, distributed architectures for efficient multi-GPU and multi-node LLM serving</p>
   </div>
 </div>
 
@@ -46,6 +47,7 @@ I am a PhD candidate in Computer Engineering at **Texas A&M University**, advise
     <div class="pub-links">
       <a href="https://arxiv.org/abs/2505.14884" class="btn-pub">📄 Paper</a>
       <a href="https://github.com/susavlsh10/Polar-Sparsity" class="btn-pub">💻 Code</a>
+      <a href="/polar-sparsity/" class="btn-pub">🔬 Project Page</a>
     </div>
   </div>
 
