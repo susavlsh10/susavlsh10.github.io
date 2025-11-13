@@ -52,10 +52,10 @@ redirect_from:
         <p class="cv-degree"><strong>Bachelor of Science in Electrical Engineering with Honors</strong></p>
         <p class="cv-minor">Minor in Computer Science</p>
         <p class="cv-thesis"><em>Honors Thesis:</em> A novel remote sensing system for in-situ measurement of subsurface soil properties</p>
-        <div class="cv-achievements">
+        <!-- <div class="cv-achievements">
           <span class="achievement-badge">Dean's List 2018-21</span>
           <span class="achievement-badge">Innovation Day Award 2021</span>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -78,7 +78,8 @@ redirect_from:
       <div class="cv-card-body">
         <p class="cv-location-detail">📍 Santa Clara, CA</p>
         <ul class="cv-highlights">
-          <li>Upcoming research internship focused on advanced ML systems optimization</li>
+          <li>Designed novel model parallelism architecture for distributed multi-node multi-GPU LLM inference </li>
+          <li> Developed and integrated parallelism architecture in vLLM. </li>
         </ul>
       </div>
     </div>
@@ -114,7 +115,7 @@ redirect_from:
         <p class="cv-location-detail">📍 San Jose, CA</p>
         <ul class="cv-highlights">
           <li>Reduced CPU workload by <strong>4×</strong> and accelerated neural inference by <strong>64%</strong> through data pipeline and model execution optimization</li>
-          <li>Filed <strong>2 patent applications</strong> for efficient neural network deployment on edge devices</li>
+          <li>Filed <strong>2 patent applications</strong> for efficient neural information retrieval.</li>
         </ul>
       </div>
     </div>
