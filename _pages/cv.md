@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <head>
-  <meta name="description" content="Curriculum Vitae of Susav Shrestha - PhD candidate specializing in efficient machine learning systems and inference optimization.">
+  <meta name="description" content="Curriculum Vitae of Susav Shrestha - Senior AI and HPC Engineer at NVIDIA specializing in efficient machine learning systems and inference optimization.">
 </head>
 
 <div class="cv-modern-page">
@@ -17,7 +17,7 @@ redirect_from:
   <section class="cv-section">
     <div class="cv-section-header">
       <h2 class="cv-section-title">
-        <span class="section-icon">🎓</span>
+        <span class="section-icon"></span>
         Education
       </h2>
       <a href="/files/susav_resume.pdf" class="btn-resume-small">
@@ -29,13 +29,13 @@ redirect_from:
       <div class="cv-card-header">
         <div class="cv-institution">
           <h3>Texas A&M University</h3>
-          <span class="cv-location">📍 College Station, TX</span>
+          <span class="cv-location">College Station, TX</span>
         </div>
-        <span class="cv-date">Aug 2021 - Est. May 2025</span>
+        <span class="cv-date">Aug 2021 – Feb 2026</span>
       </div>
       <div class="cv-card-body">
         <p class="cv-degree"><strong>Doctor of Philosophy in Computer Engineering</strong></p>
-        <p class="cv-thesis"><em>Thesis:</em> Hardware Efficient ML System Design in Knowledge Retrieval</p>
+        <p class="cv-thesis"><em>Thesis:</em> Efficient LLM Inference: Sparsity, Parallelism, and Hardware-Aware System Design</p>
         <p class="cv-advisor"><em>Advisor:</em> Dr. Narasimha Annapareddy Reddy</p>
       </div>
     </div>
@@ -44,7 +44,7 @@ redirect_from:
       <div class="cv-card-header">
         <div class="cv-institution">
           <h3>University of Texas Arlington</h3>
-          <span class="cv-location">📍 Arlington, TX</span>
+          <span class="cv-location">Arlington, TX</span>
         </div>
         <span class="cv-date">Aug 2017 - May 2021</span>
       </div>
@@ -63,7 +63,7 @@ redirect_from:
   <!-- Experience Section -->
   <section class="cv-section">
     <h2 class="cv-section-title">
-      <span class="section-icon">💼</span>
+      <span class="section-icon"></span>
       Professional Experience
     </h2>
 
@@ -71,15 +71,14 @@ redirect_from:
       <div class="cv-card-header">
         <div class="cv-institution">
           <h3>NVIDIA</h3>
-          <span class="cv-role">Research Intern</span>
+          <span class="cv-role">Senior AI and HPC Engineer</span>
         </div>
-        <span class="cv-date">May 2025 - Aug 2025</span>
+        <span class="cv-date">Feb 2026 – Present</span>
       </div>
       <div class="cv-card-body">
-        <p class="cv-location-detail">📍 Santa Clara, CA</p>
+        <!-- <p class="cv-location-detail">Santa Clara, CA</p> -->
         <ul class="cv-highlights">
-          <li>Designed novel model parallelism architecture for distributed multi-node multi-GPU LLM inference </li>
-          <li> Developed and integrated parallelism architecture in vLLM. </li>
+          <li>Working on MoE inference efficiency at scale, optimizing throughput and latency for agentic workloads.</li>
         </ul>
       </div>
     </div>
@@ -90,10 +89,27 @@ redirect_from:
           <h3>NVIDIA</h3>
           <span class="cv-role">Research Intern</span>
         </div>
-        <span class="cv-date">May 2024 - Aug 2024</span>
+        <span class="cv-date">May 2025 – Aug 2025</span>
       </div>
       <div class="cv-card-body">
-        <p class="cv-location-detail">📍 Austin, TX</p>
+        <p class="cv-location-detail">Santa Clara, CA</p>
+        <ul class="cv-highlights">
+          <li>Designed novel model parallelism architecture for distributed multi-node multi-GPU LLM inference</li>
+          <li>Developed and integrated parallelism architecture in vLLM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-card highlight">
+      <div class="cv-card-header">
+        <div class="cv-institution">
+          <h3>NVIDIA</h3>
+          <span class="cv-role">Research Intern</span>
+        </div>
+        <span class="cv-date">May 2024 – Aug 2024</span>
+      </div>
+      <div class="cv-card-body">
+        <p class="cv-location-detail">Austin, TX</p>
         <ul class="cv-highlights">
           <li>Led research to accelerate LLM inference via activation and contextual sparsity</li>
           <li>Built sparsely activated OPT and LLaMA models by training activation routers for MLP and Attention layers</li>
@@ -109,13 +125,13 @@ redirect_from:
           <h3>Samsung Semiconductor Inc.</h3>
           <span class="cv-role">Research Intern</span>
         </div>
-        <span class="cv-date">May 2022 - Aug 2022</span>
+        <span class="cv-date">May 2022 – Aug 2022</span>
       </div>
       <div class="cv-card-body">
-        <p class="cv-location-detail">📍 San Jose, CA</p>
+        <p class="cv-location-detail">San Jose, CA</p>
         <ul class="cv-highlights">
           <li>Reduced CPU workload by <strong>4×</strong> and accelerated neural inference by <strong>64%</strong> through data pipeline and model execution optimization</li>
-          <li>Filed <strong>2 patent applications</strong> for efficient neural information retrieval.</li>
+          <li>Filed <strong>2 patent applications</strong> for efficient neural information retrieval</li>
         </ul>
       </div>
     </div>
@@ -126,10 +142,10 @@ redirect_from:
           <h3>Texas A&M University</h3>
           <span class="cv-role">Graduate Research Assistant</span>
         </div>
-        <span class="cv-date">Aug 2021 - Present</span>
+        <span class="cv-date">Aug 2021 – Feb 2026</span>
       </div>
       <div class="cv-card-body">
-        <p class="cv-location-detail">📍 College Station, TX</p>
+        <p class="cv-location-detail">College Station, TX</p>
         <ul class="cv-highlights">
           <li>Led a project that resulted in a <strong>23% speedup</strong> in embedding processing for large-scale information retrieval</li>
           <li>Developed scalable multi-vector retrieval systems for large language models</li>
@@ -142,7 +158,7 @@ redirect_from:
   <!-- Patents Section -->
   <section class="cv-section">
     <h2 class="cv-section-title">
-      <span class="section-icon">🔬</span>
+      <span class="section-icon"></span>
       Patents
     </h2>
     
@@ -166,7 +182,7 @@ redirect_from:
   <!-- Skills Section -->
   <section class="cv-section">
     <h2 class="cv-section-title">
-      <span class="section-icon">⚡</span>
+      <span class="section-icon"></span>
       Technical Skills
     </h2>
     
@@ -222,34 +238,30 @@ redirect_from:
   <!-- Honors Section -->
   <section class="cv-section">
     <h2 class="cv-section-title">
-      <span class="section-icon">🏆</span>
+      <span class="section-icon"></span>
       Honors & Awards
     </h2>
     
     <div class="honors-grid">
       <div class="honor-item">
-        <span class="honor-icon">🎖️</span>
         <div class="honor-content">
           <strong>Innovation Day Award</strong>
           <span class="honor-year">2021</span>
         </div>
       </div>
       <div class="honor-item">
-        <span class="honor-icon">📚</span>
         <div class="honor-content">
           <strong>Dean's List</strong>
-          <span class="honor-year">2018-2021</span>
+          <span class="honor-year">2018–2021</span>
         </div>
       </div>
       <div class="honor-item">
-        <span class="honor-icon">⭐</span>
         <div class="honor-content">
           <strong>Academic Excellence Award</strong>
           <span class="honor-year">2016</span>
         </div>
       </div>
       <div class="honor-item">
-        <span class="honor-icon">🌟</span>
         <div class="honor-content">
           <strong>Cambridge Learners Award</strong>
           <span class="honor-year">2015</span>

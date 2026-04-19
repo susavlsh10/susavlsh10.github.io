@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Susav Shrestha"
 title_separator          : "-"
 name                     : &name "Susav Shrestha"
-description              : &description "Computer Researcher: PhD Student at Texas A&M University"
+description              : &description "Senior AI and HPC Engineer | PhD in Computer Engineering, Texas A&M University"
 url                      : https://susavlsh10.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Susav Shrestha"
   avatar           : "susav_img.jpg"
-  bio              : "Computer Engineering PhD Candidate at Texas A&M University"
-  location         : "College Station, Texas"
-  employer         :
+  bio              : "Senior AI and HPC Engineer | PhD in Computer Engineering"
+  location         : 
+  employer         : 
   pubmed           : 
   googlescholar    : https://scholar.google.com/citations?user=O_RQBJsAAAAJ&hl=en&authuser=1
   email            : "susavlsh10@gmail.com"

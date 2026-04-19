@@ -188,79 +188,124 @@
    ======================================================================== */
 
 .experience-timeline {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   margin: 1.25rem 0 1.75rem;
-  padding-left: 3.5rem;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    left: 1.2rem;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, #1e293b, #475569, #64748b);
-    border-radius: 2px;
-  }
 }
 
 .experience-item {
-  position: relative;
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 0.875rem;
-  
-  &:last-child {
-    margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 0 1rem;
+  align-items: start;
+
+  &:last-child .exp-content {
+    border-bottom: none;
   }
 }
 
 .exp-badge {
-  position: absolute;
-  left: 0;
-  width: 2.4rem;
-  height: 2.4rem;
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-  color: white;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 0.15rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  font-size: 0.7rem;
-  box-shadow: 0 4px 12px rgba(30, 41, 59, 0.3);
-  flex-shrink: 0;
-  border: 2px solid white;
+  color: #64748b;
+  text-align: right;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .exp-content {
   background: #ffffff;
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.08);
-  flex: 1;
-  margin-left: 2.9rem;
   border: 1px solid #e2e8f0;
-  transition: all 0.3s ease;
-  
+  border-left: 3px solid #1e293b;
+  box-shadow: 0 1px 6px rgba(30, 41, 59, 0.06);
+  transition: all 0.25s ease;
+
   &:hover {
-    box-shadow: 0 4px 16px rgba(30, 41, 59, 0.15), 0 0 0 1px rgba(148, 163, 184, 0.3);
-    transform: translateX(3px);
-    border-color: #94a3b8;
+    box-shadow: 0 4px 14px rgba(30, 41, 59, 0.12);
+    border-left-color: #38bdf8;
+    transform: translateX(2px);
   }
-  
+
   h4 {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #1e293b;
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 0.2rem 0;
   }
 }
 
 .exp-location {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 0 !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  line-height: 1.6;
+
+  &::before {
+    content: '📍';
+    font-size: 0.7rem;
+  }
+}
+
+/* ========================================================================
+   EDUCATION SECTION
+   ======================================================================== */
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.education-item {
+  background: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  border-left: 3px solid #1e293b;
+  box-shadow: 0 1px 6px rgba(30, 41, 59, 0.06);
+  transition: all 0.25s ease;
+
+  &:hover {
+    box-shadow: 0 4px 14px rgba(30, 41, 59, 0.12);
+    border-left-color: #38bdf8;
+    transform: translateX(2px);
+  }
+}
+
+.edu-degree {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.15rem;
+}
+
+.edu-school {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-bottom: 0.1rem;
+}
+
+.edu-detail {
   font-size: 0.75rem;
-  color: #475569;
-  margin: 0;
+  color: #94a3b8;
+
+  a {
+    color: #475569;
+    text-decoration: none;
+
+    &:hover {
+      color: #38bdf8;
+    }
+  }
 }
 
 /* ========================================================================
@@ -1336,25 +1381,23 @@
   }
   
   .experience-timeline {
-    padding-left: 1.5rem;
-    
-    &::before {
-      width: 2px;
-    }
+    gap: 0.6rem;
   }
-  
+
+  .experience-item {
+    grid-template-columns: 4rem 1fr;
+    gap: 0 0.75rem;
+  }
+
   .exp-badge {
-    width: 3rem;
-    height: 3rem;
-    font-size: 0.8rem;
+    font-size: 0.68rem;
   }
-  
+
   .exp-content {
-    margin-left: 1.5rem;
-    padding: 1rem;
-    
+    padding: 0.65rem 0.85rem;
+
     h4 {
-      font-size: 1rem;
+      font-size: 0.85rem;
     }
   }
   
