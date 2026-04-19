@@ -11,32 +11,13 @@ redirect_from:
 ---
 
 <head>
-  <meta name="description" content="Susav is a PhD candidate at Texas A&M University. His research focuses on building efficient and scalable machine learning systems with an emphasis on inference optimization.">
+  <meta name="description" content="Susav Shrestha is an ML and HPC Architect focused on optimizing machine learning systems at scale. PhD in Computer Engineering from Texas A&M University.">
 </head>
 
 <!-- {% include toc %} -->
-I am a **PhD candidate in Computer Engineering** at Texas A&M University, advised by [Dr. Narasimha Reddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). My work bridges the gap between algorithm design and system-level efficiency, with a focus on **accelerating large-scale inference**.
-
-<!-- I specialize in building **efficient and scalable machine learning systems** for real-world deployment.  -->
-
-My work focuses on **making machine learning systems more efficient and accessible** through sparsity, hardware-aware design, and distributed inference.
+I am an **ML and HPC Architect** focused on optimizing machine learning systems at scale. I recently completed my **PhD in Computer Engineering** at Texas A&M University, where I was advised by [Dr. Narasimha Reddy](https://experts.tamu.edu/expert/narasimha-annapareddy/). My work spans algorithm design and system-level efficiency, with a focus on **accelerating large-scale inference** through sparsity, hardware-aware design, and distributed systems.
 
 ---
-### Research Interests
-
-<div class="research-interests">
-  <div class="interest-card">
-    <div class="interest-icon">🚀</div>
-    <h4>Efficient & Sparse LLM Inference</h4>
-    <p>Optimizing large language models for high-throughput deployment</p>
-  </div>
-  <div class="interest-card">
-    <div class="interest-icon">⚡</div>
-    <h4>HPC and Distributed Systems</h4>
-    <p>Building scalable, distributed architectures for efficient multi-GPU and multi-node LLM serving</p>
-  </div>
-</div>
-
 ### Featured Publications
 
 <div class="publications-featured">
