@@ -76,7 +76,7 @@ Researching high-throughput, low-latency LLM inference systems at scale. My focu
   <div class="education-item">
     <div class="edu-degree">PhD, Computer Engineering</div>
     <div class="edu-school">Texas A&M University · Aug 2021 – Feb 2026</div>
-    <div class="edu-detail">Advised by <a href="https://experts.tamu.edu/expert/narasimha-annapareddy/">Dr. Narasimha Reddy</a></div>
+    <div class="edu-detail">Advised by <a href="https://engineering.tamu.edu/electrical/profiles/reddy-narasimha.html">Dr. Narasimha Reddy</a></div>
   </div>
 </div>
 

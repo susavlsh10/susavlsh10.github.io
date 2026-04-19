@@ -36,7 +36,7 @@ redirect_from:
       <div class="cv-card-body">
         <p class="cv-degree"><strong>Doctor of Philosophy in Computer Engineering</strong></p>
         <p class="cv-thesis"><em>Thesis:</em> Efficient LLM Inference: Sparsity, Parallelism, and Hardware-Aware System Design</p>
-        <p class="cv-advisor"><em>Advisor:</em> Dr. Narasimha Annapareddy Reddy</p>
+        <p class="cv-advisor"><em>Advisor:</em> Dr. Narasimha Reddy</p>
       </div>
     </div>
 
